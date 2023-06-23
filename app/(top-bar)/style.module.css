@@ -1,0 +1,20 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--top-bar-height);
+    transition: all .3s ease;
+    z-index: 100;
+}
+
+.colSpacer{
+    width: 20px;
+}
+
+.link{
+    transition: all .3s ease;
+}
+.link:hover{
+    color: var(--theme-color);
+}

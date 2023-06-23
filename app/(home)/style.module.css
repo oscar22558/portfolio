@@ -1,0 +1,51 @@
+.container{
+    height: 100vh;
+    color: rgb(var(--foreground-rgb));
+    background-color: #000;
+}
+
+.top-spacer{
+    height: var(--top-bar-height);
+}
+
+.title{
+    font-size: 4em;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.subtitle{
+    font-size: 1.5em;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.colored-text{
+    color: var(--theme-color);
+    transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -o-transition: color .5s ease;
+}
+.colored-text:hover{
+    color: #fff; 
+}
+
+.initial-ease{
+    position: relative;
+    top: 100px;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition: transform 1s ease, color .5s ease;
+    -webkit-transition: transform 1s ease, color .5s ease;
+    -moz-transition: transform 1s ease, color .5s ease;
+    -ms-transition: transform 1s ease, color .5s ease;
+    -o-transition: transform 1s ease, color .5s ease;
+}
