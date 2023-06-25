@@ -1,0 +1,12 @@
+.container{
+    height: var(--top-bar-height);
+}
+
+.dropdown-activated{
+    transform: translateY(400px);
+}
+
+.dropdown{
+    top: -300px;
+    height: 300px;
+}

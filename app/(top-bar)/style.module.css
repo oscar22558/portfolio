@@ -8,13 +8,10 @@
     z-index: 100;
 }
 
-.colSpacer{
-    width: 20px;
-}
-
 .link{
     transition: all .3s ease;
 }
+
 .link:hover{
     color: var(--theme-color);
 }

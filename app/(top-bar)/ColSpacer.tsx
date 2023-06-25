@@ -1,5 +1,3 @@
-import style from './style.module.css'
-
 export function ColSpacer(){
-    return <span className={style.colSpacer}></span>
+    return <span className="w-4"></span>
 }
