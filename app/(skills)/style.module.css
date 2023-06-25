@@ -1,6 +1,6 @@
 .container{
     background-color: var(--section-bg-color);
-    height: 750px;
+    min-height: var(--section-container-min-height);
 }
 
 .max-width-container{

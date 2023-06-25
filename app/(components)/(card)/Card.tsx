@@ -11,13 +11,13 @@ interface Props{
 export function Card({title, content, image, color}: Props){
     return (
         <div className={`${style["card-container"]} shadow-2xl p-12 border-b-4`} style={{borderBottomColor: `${color}`}}>
-            <div className={`${style["colored-svg"]}`} style={{color}}>
+            <div className={`flex justify-center`}>
                 {image}
             </div>
             <br />
-            <div className="font-semibold">{title}</div>
+            <div className="font-semibold text-center">{title}</div>
             <br />
-            <div className="text-gray-500">{content}</div>
+            <div className="text-gray-500 text-justify">{content}</div>
         </div>
     )
 }

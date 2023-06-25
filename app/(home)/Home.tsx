@@ -10,7 +10,9 @@ export function Home(){
                 I'm a&nbsp;
                 <span className={style["colored-text"]}>full stack developer</span>
                 <span>.</span>
+
             </div>
+
         </div>
     </div>
 }

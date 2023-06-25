@@ -31,7 +31,7 @@ export function TopBar(){
         <ColSpacer /> 
         <SectionLink text="About" href="#about"/>
         <ColSpacer /> 
-        <SectionLink text="Skill" href="#skills"/>
+        <SectionLink text="Skills" href="#skills"/>
         <ColSpacer /> 
         <SectionLink text="Education" href="#education"/>
         <ColSpacer /> 

@@ -1,5 +1,5 @@
 .container{
-    height: 100vh;
+    min-height: 50vh;
     color: rgb(var(--foreground-rgb));
     background-color: #000;
 }
@@ -44,4 +44,8 @@
     -moz-transition: transform 1s ease, color .5s ease;
     -ms-transition: transform 1s ease, color .5s ease;
     -o-transition: transform 1s ease, color .5s ease;
+}
+
+.about-me-container{
+    max-width: var(--section-max-width);
 }
