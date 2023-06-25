@@ -4,10 +4,6 @@
     background-color: #000;
 }
 
-.top-spacer{
-    height: var(--top-bar-height);
-}
-
 .title{
     font-size: 4em;
     font-family: "Playfair Display", Georgia, serif;

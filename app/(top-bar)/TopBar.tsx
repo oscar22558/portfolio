@@ -11,19 +11,19 @@ export function TopBar(){
           "IntersectionObserverEntry" in window &&
           "intersectionRatio" in window.IntersectionObserverEntry.prototype
         ) {
-        let observer = new IntersectionObserver(entries => {
-          if (entries[0].boundingClientRect.y < 0) {
-            document.querySelector("#top-bar-container")?.classList.remove("top-bar-original");
-            document.querySelector("#top-bar-container")?.classList.add("top-bar-animate");
-          } else {
-            document.querySelector("#top-bar-container")?.classList.remove("top-bar-animate");
-            document.querySelector("#top-bar-container")?.classList.add("top-bar-original");
+          let observer = new IntersectionObserver(entries => {
+            if (entries[0].boundingClientRect.y < 0) {
+              document.querySelector("#top-bar-container")?.classList.remove("top-bar-original");
+              document.querySelector("#top-bar-container")?.classList.add("top-bar-animate");
+            } else {
+              document.querySelector("#top-bar-container")?.classList.remove("top-bar-animate");
+              document.querySelector("#top-bar-container")?.classList.add("top-bar-original");
+            }
+          });
+          const ele = document.querySelector("#top-of-site-pixel-anchor")
+          if(ele){
+            observer.observe(ele);
           }
-        });
-        const ele = document.querySelector("#top-of-site-pixel-anchor")
-        if(ele){
-          observer.observe(ele);
-        }
         }
     },[])
     return <div id="top-bar-container" className={`${style.container} flex justify-end items-center`}>
@@ -31,7 +31,7 @@ export function TopBar(){
         <ColSpacer /> 
         <SectionLink text="About" href="#about"/>
         <ColSpacer /> 
-        <SectionLink text="Skills" href="#skills"/>
+        <SectionLink text="Skill" href="#skills"/>
         <ColSpacer /> 
         <SectionLink text="Education" href="#education"/>
         <ColSpacer /> 

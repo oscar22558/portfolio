@@ -1,0 +1,9 @@
+.card-container{
+    height: 400px;
+    width: 325px;
+    border-bottom-color: var(--theme-color);
+}
+
+.colored-svg{
+    color: var(--theme-color);
+}
