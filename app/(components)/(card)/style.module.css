@@ -1,9 +1,28 @@
 .card-container{
-    height: 400px;
-    width: 325px;
     border-bottom-color: var(--theme-color);
 }
 
-.colored-svg{
-    color: var(--theme-color);
+.card-container-width{
+    width: var(--section-content-max-width);
+}
+.card-container-height{
+    height: 300px;
+}
+
+@media (min-width: 1024px){
+    .card-container-width{
+        width: 275px;
+    }
+    .card-container-height{
+        height: 400px;
+    }
+}
+
+@media (min-width: 1280px){
+    .card-container-width{
+        width: 325px;
+    }
+    .card-container-height{
+        height: 400px;
+    }
 }

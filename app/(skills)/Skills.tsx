@@ -17,10 +17,10 @@ export function Skills() {
                     <div>
                         <div className={`${style.title}`}>I can code in</div>
                         <br />
-                        <div className="grid gap-x-12 gap-y-4 grid-cols-3">
+                        <div className="grid gap-x-6 lg:gap-x-12 gap-y-4 grid-cols-3">
                             {langModels.map(({ img, title }, index) => (
                                 <SkillStackIconItem key={index} index={index} imgSrc={img} alt={''} width={48} height={48}>
-                                    <span className="ml-4">{title}</span>
+                                    <span className="ml-4 hidden md:inline">{title}</span>
                                 </SkillStackIconItem>
                             ))}
                         </div>
@@ -28,10 +28,10 @@ export function Skills() {
                         <br />
                         <div className={`${style.title}`}>I know</div>
                         <br />
-                        <div className="grid gap-x-12 gap-y-4 grid-cols-3">
+                        <div className="grid gap-x-6 lg:gap-x-12 gap-y-4 grid-cols-3">
                             {toolsModels.map(({ img, title }, index) => (
                                 <SkillStackIconItem key={index} index={index} imgSrc={img} alt={''} width={48} height={48}>
-                                    <span className="ml-4">{title}</span>
+                                    <span className="ml-4 hidden md:inline">{title}</span>
                                 </SkillStackIconItem>
                             ))}
                         </div>

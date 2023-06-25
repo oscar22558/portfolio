@@ -14,9 +14,11 @@
 }
 
 .wid-container{
-    margin-left: -50px;
+    margin-top: -4rem;
 }
 
-.wid-card-container{
-    padding-left: 50px;
+@media (min-width: 1024px){
+    .wid-container{
+        margin-top: 0rem;
+    }
 }

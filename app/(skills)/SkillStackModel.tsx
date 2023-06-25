@@ -6,7 +6,7 @@ const SkillStackModel = {
         },
         {
             img: "/js-icon.png",
-            title: "JavaScript/TypeScript"
+            title: "JS/TS"
         },
         {
             img: "/java-icon.png",
