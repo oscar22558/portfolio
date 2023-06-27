@@ -7,6 +7,8 @@ import { Skills } from './(skills)/Skills'
 import { Education } from './(education)/Education'
 import { Contact } from './(contact)/Contact'
 import { MobileTopBar } from './(mobile-top-bar)/MobileTopBar'
+import { Resume } from './(resume)/Resume'
+import { Footer } from './(footer)/Footer'
 
 export default function App() {
     return (
@@ -16,10 +18,10 @@ export default function App() {
             <Home />
             <About />
             <Skills />
-            <Education />
-            <Experience />
+            <Resume />
             <Projects />
             <Contact />
+            <Footer />
         </>
     )
 }

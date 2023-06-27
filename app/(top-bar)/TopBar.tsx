@@ -33,9 +33,7 @@ export function TopBar(){
         <ColSpacer /> 
         <SectionLink text="Skills" href="#skills"/>
         <ColSpacer /> 
-        <SectionLink text="Education" href="#education"/>
-        <ColSpacer /> 
-        <SectionLink text="Experience" href="#exp"/>
+        <SectionLink text="Resume" href="#resume"/>
         <ColSpacer /> 
         <SectionLink text="Projects" href="#projects"/>
         <ColSpacer /> 
