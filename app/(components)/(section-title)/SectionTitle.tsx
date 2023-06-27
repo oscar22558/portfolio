@@ -5,5 +5,5 @@ interface Props{
 }
 
 export function SectionTitle({children}: Props){
-    return <div className={`text-4xl uppercase font-bold`}>{children}</div>
+    return <div className={`text-4xl font-bold`}>{children}</div>
 }

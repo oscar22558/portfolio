@@ -14,10 +14,11 @@ export function SkillStackIconItem({imgSrc, alt, height, width, children, ...Ski
     const timeStamp = new Date().getTime()
     return (
         <SkillStackItem {...SkillStackItemProps}>
-            <div className="flex flex-row items-center md:justify-start justify-center h-full">
+            <div className="flex flex-row items-center justify-start h-full">
                 <Image src={imgSrc+`?${timeStamp}`} alt={alt} height={height} width={width}/>
                 {children}
             </div>
+
         </SkillStackItem>
     )
 }

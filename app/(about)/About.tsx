@@ -13,6 +13,7 @@ export function About() {
                 <SectionTopSpacer />
                 <div className={`${style["titiel-container"]} w-full flex flex-col`}>
                     <SectionTitle>About me</SectionTitle>
+                    <div className="text-sky-400">Who am I</div>
                     <div className="text-gray-500 py-8">I am a full-stack developer with 1.5 years of experience in building web apps and backend services.
                         With my skills, experiences and passion in software development, I am very confident in building high quality software system which suit my client's needs.
                         I'm open to any job opportunities. Please feel free to contact me if yo.
