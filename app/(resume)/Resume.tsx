@@ -18,7 +18,7 @@ export function Resume(){
                 </div>
                 <div className="w-full flex flex-col items-center basis-1/2 grow-0">
                     <SectionTitle>Resume</SectionTitle>
-                    <div className="text-sky-500">My studys and works</div>  
+                    <div className="text-sky-500">My studys and professional experiences</div>  
                 </div>
             </div>
             <SectionTopSpacer />
