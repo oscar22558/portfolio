@@ -1,14 +1,50 @@
 const SkillStackModel = {
-    lang: [
+    tools: [
         {
-            img: "/html-css-icon.png",
-            title: "HTML/CSS"
+            img: "/aws-icon.png",
+            title: "AWS"
         },
+        {
+            img: "/docker-icon.png",
+            title: "Docker"
+        },
+        {
+            img: "/git-icon.png",
+            title: "Git"
+        },
+        {
+            img: "/github-icon.png",
+            title: "Github"
+        },
+    ],
+    frontend:[
         {
             img: "/js-icon.png",
-            title: "JS/TS"
+            title: "JavaScript"
         },
         {
+            img: "/ts-icon.png",
+            title: "TypeScript"
+        },
+        {
+            img: "/reactjs-icon.png",
+            title: "React.js"
+        },
+        {
+            img: "/nextjs-icon.png",
+            title: "Next.js"
+        },
+        {
+            img: "/tailwind-icon.png",
+            title: "TailWind"
+        },
+        {
+            img: "/sass-icon.png",
+            title: "Sass"
+        }
+    ],
+    backend: [
+       {
             img: "/java-icon.png",
             title: "Java"
         },        
@@ -17,39 +53,17 @@ const SkillStackModel = {
             title: "PHP"
         },
         {
-            img: "/python-icon.png",
-            title: "Python"
-        },
-        {
-            img: "/sql-icon.png",
-            title: "SQL"
-        }
-    ],
-    tools: [
-        {
-            img: "/reactjs-icon.png",
-            title: "React.js"
-        },
-        {
             img: "/laravel-icon.png",
             title: "Laravel"
         },
         {
             img: "/springboot-icon.png",
             title: "Spring Boot"
-        },
-        {
-            img: "/docker-icon.png",
-            title: "Docker"
-        },
+        }, 
         {
             img: "/postgresql-icon.png",
             title: "PostgreSQL"
         },
-        {
-            img: "/git-icon.png",
-            title: "Git"
-        }
     ]
 }
 

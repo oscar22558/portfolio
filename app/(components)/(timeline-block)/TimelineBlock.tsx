@@ -3,8 +3,9 @@ import style from "./style.module.css"
 
 interface Props{
     model: TimelineModel
+    icon?: string
 }
-export function TimelineBlock({model}: Props){
+export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
     const {leftContent, leftTitle, rightContent, rightTitle} = model
     return (
         <div className="flex flex-row items-start">
@@ -14,7 +15,7 @@ export function TimelineBlock({model}: Props){
             </div>
             <div>
                 <div className={`rounded-full h-12 w-12 bg-sky-500 text-white flex justify-center items-center`}>
-                    <img className={style["svg-color"]} src="/graduation-cap.svg" alt="" height={24} width={24} />
+                    <img className={style["svg-color"]} src={icon} alt="" height={24} width={24} />
                 </div>
             </div>
             <div className="basis-0 grow px-8 flex flex-col justify-start items-start">
