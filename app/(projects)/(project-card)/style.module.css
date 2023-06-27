@@ -1,0 +1,17 @@
+div.card-container div.caption-container{
+    bottom: -110px;
+    transition: all 500ms ease;
+    background-color: #a1a1a1e5;
+}
+div.card-container:hover div.caption-container{
+    bottom: 0px;
+}
+
+div.card-container div img{
+    transition: all 500ms ease;
+
+}
+
+div.card-container:hover div img{
+    transform: scale(1.1);
+}

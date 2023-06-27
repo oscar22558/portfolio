@@ -10,8 +10,8 @@ export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
     return (
         <div className="flex flex-row items-start">
             <div className="basis-0 grow px-8 flex flex-col justify-start items-end">
-                <div>{leftTitle}</div>
-                <div className="pt-4 text-gray-500">{leftContent}</div>
+                <div className=" text-right">{leftTitle}</div>
+                <div className="pt-4 text-gray-500 text-right">{leftContent}</div>
             </div>
             <div>
                 <div className={`rounded-full h-12 w-12 bg-sky-500 text-white flex justify-center items-center`}>
@@ -19,8 +19,8 @@ export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
                 </div>
             </div>
             <div className="basis-0 grow px-8 flex flex-col justify-start items-start">
-                <div>{rightTitle}</div>
-                <div className="pt-4 text-gray-500">{rightContent}</div>
+                <div className=" text-left">{rightTitle}</div>
+                <div className="pt-4 text-gray-500  text-left">{rightContent}</div>
             </div>
         </div>
     )
