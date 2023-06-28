@@ -26,7 +26,7 @@ export function TopBar(){
           }
         }
     },[])
-    return <div id="top-bar-container" className={`${style.container} hidden md:flex justify-end items-center`}>
+    return <div id="top-bar-container" className={`${style.container} hidden lg:flex justify-end items-center`}>
         <SectionLink text="Home" href="#home"/>
         <ColSpacer /> 
         <SectionLink text="About" href="#about"/>

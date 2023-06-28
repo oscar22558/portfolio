@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import style from "./style.module.css";
+import Text from "../(text)/Text";
 
 interface Props{
     title?: string
@@ -10,14 +11,14 @@ interface Props{
 
 export function Card({title, content, image, color}: Props){
     return (
-        <div className={`${style["card-container"]} ${style["card-container-width"]} ${style["card-container-height"]} h-full w-full shadow-xl p-4 md:p-8 border-b-4 hover:shadow-2xl transition-shadow duration-300`} style={{borderBottomColor: `${color}`}}>
-            <div className={`flex justify-center`}>
+        <div className={`${style["card-container"]} ${style["card-container-width"]} ${style["card-container-height"]} h-full w-full shadow-xl p-4 border-l-4 hover:shadow-2xl transition-shadow duration-300`} style={{borderBottomColor: color}}>
+            <div className="flex justify-center items-center mb-4">
                 {image}
             </div>
-            <br />
-            <div className="font-semibold text-center">{title}</div>
-            <br />
-            <div className="text-gray-500 text-start">{content}</div>
+            <div className="flex justify-center items-center mb-4 font-semibold ml-8">
+                        <Text color="text-black">{title}</Text>
+            </div>
+            <div><Text className="text-center">{content}</Text></div>
         </div>
     )
 }

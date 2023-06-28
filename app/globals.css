@@ -11,6 +11,7 @@
     --top-bar-height: 100px;
     --section-content-max-width: 500px;
     --section-container-min-height: 800px;
+    --long-text-width: 600px;
 }
 
 @media (min-width: 768px) {
