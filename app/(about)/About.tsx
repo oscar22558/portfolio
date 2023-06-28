@@ -8,12 +8,21 @@ import AppClassName from '../AppClassName'
 import { SectionHeaderDivider } from '../(components)/(section-header-divider)/SectionHeaderDivider'
 
 export function About() {
-    const {sectionContainerXPadding, headerContentYPadding} = AppClassName
+    const {sectionContainerXPadding, headerContentYPadding, sectionHeaderContainer} = AppClassName
     return (
         <div id="about" className={`${style.container} ${sectionContainerXPadding}`}>
             <SectionTopSpacer />
-            <div className="flex flex-col lg:flex-row">
-                <div className="flex flex-col justify-center items-center basis-1/2 grow-0">
+            <div className="flex flex-col-reverse lg:flex-row">
+
+                <div className={`flex flex-col basis-1/2 items-center lg:items-end justify-start ${style["wid-container"]}`}>
+                    {ModelList.map(({ img, ...model }, index) => (
+                        <div key={index} className="mt-8">
+                            <Card image={<img src={img} style={{width: 48, height: 48}} alt="" />} {...model} />
+                        </div>
+                    ))}
+                </div>
+                <SectionHeaderDivider />
+                <div className={sectionHeaderContainer}>
                     <SectionTitle>About me</SectionTitle>
                     <div>
                         <Text color={AppClassName.subtitleTextColor}>Who am I</Text>
@@ -24,14 +33,6 @@ export function About() {
                         I'm open to any job opportunities. Please feel free to contact me if you have job opportunities for me.
                         </Text>
                     </div>
-                </div>
-                <SectionHeaderDivider />
-                <div className={`flex flex-col basis-1/2 grow-0 items-center lg:items-start justify-start ${style["wid-container"]}`}>
-                    {ModelList.map(({ img, ...model }, index) => (
-                        <div key={index} className="mt-16">
-                            <Card image={<img src={img} style={{width: 48, height: 48}} alt="" />} {...model} />
-                        </div>
-                    ))}
                 </div>
             </div>
             <SectionTopSpacer />

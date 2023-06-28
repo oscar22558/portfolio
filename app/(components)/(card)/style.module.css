@@ -1,5 +1,5 @@
 .card-container{
-    border-left-color: var(--theme-color);
+    border-right-color: var(--theme-color);
 }
 
 .card-container-width{

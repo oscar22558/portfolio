@@ -28,9 +28,11 @@ export function ProjectCard({href, title, img, size = 400, techTags}: Props){
             <div className="h-full w-full flex justify-center items-center">
                 <img src={img} className="object-cover" style={imgStyle}/>
             </div>
-            <div className={`absolute inset-x-0 ${style["caption-container"]} p-2`}>
-                <div className='text-white text-lg font-semibold'>{title}</div>
-                {techTags}
+            <div className={`absolute inset-x-0 ${style["caption-container"]} p-4`}>
+                <div className='text-white text-base font-semibold'>{title}</div>
+                <div className="flex flex-row flex-wrap">
+                    {techTags}
+                </div>
             </div>
         </div>
     )

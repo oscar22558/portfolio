@@ -11,7 +11,7 @@ interface Props{
 
 export function Card({title, content, image, color}: Props){
     return (
-        <div className={`${style["card-container"]} ${style["card-container-width"]} ${style["card-container-height"]} h-full w-full shadow-xl p-4 border-l-4 hover:shadow-2xl transition-shadow duration-300`} style={{borderBottomColor: color}}>
+        <div className={`${style["card-container"]} ${style["card-container-width"]} ${style["card-container-height"]} h-full w-full shadow-xl p-4 border-r-4 hover:shadow-2xl transition-shadow duration-300`} style={{borderBottomColor: color}}>
             <div className="flex justify-center items-center mb-4">
                 {image}
             </div>

@@ -4,7 +4,7 @@ import { EducationTimelineModels } from "./EducationTimelineModels";
 
 export function Education(){
     return <div id="education">
-        <div className="text-sky-500 text-center mb-8">Education</div>
+        <div className="text-sky-500 text-center mb-4">Education</div>
         <TimelineContainer>
             {EducationTimelineModels.map((model, index)=><TimelineBlock key={index} model={model}/>)}
         </TimelineContainer>

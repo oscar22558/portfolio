@@ -11,3 +11,15 @@
 .badge{
     transform: translate(1rem, -1rem);
 }
+
+.techs-container{
+    margin-left: -1.5rem;
+}
+
+.tech-stacks-container{
+    margin-top: -3rem;
+}
+
+.header-content-width{
+    max-width: var(--long-text-width);
+}

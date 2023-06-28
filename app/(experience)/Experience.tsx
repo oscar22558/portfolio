@@ -5,7 +5,7 @@ import { ExpTimelineModels } from "./TimelineModels";
 
 export function Experience() {
     return <div id="exp" className={`${style.container}`}>
-        <div className="text-sky-500 text-center mb-8">Work Experiences</div>
+        <div className="text-sky-500 text-center mb-4">Work Experiences</div>
         <TimelineContainer>
             {ExpTimelineModels.map((model, index) => <TimelineBlock key={index} model={model} icon="/work-icon.svg"/>)}
         </TimelineContainer>

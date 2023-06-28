@@ -43,11 +43,9 @@ export function Projects() {
                             models.map(({ href, img, techTags, title }, index) => (
                                 <div className="pl-12 pt-8">
                                     <ProjectCard key={index} img={img} title={title} href={href} techTags={(
-                                        <div className="py-2">{
-                                            techTags.map((title, index) => (
-                                                <TechTagContainer key={index} title={title} />
-                                            ))
-                                        }</div>
+                                        techTags.map((title, index) => (
+                                            <TechTagContainer key={index} title={title} />
+                                        ))
                                     )} />
                                 </div>
                             ))
