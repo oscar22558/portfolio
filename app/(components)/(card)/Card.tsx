@@ -15,7 +15,7 @@ export function Card({title, content, image, color}: Props){
             <div className="flex justify-center items-center mb-4">
                 {image}
             </div>
-            <div className="flex justify-center items-center mb-4 font-semibold ml-8">
+            <div className="flex justify-center items-center mb-4 font-semibold">
                         <Text color="text-black">{title}</Text>
             </div>
             <div><Text className="text-center">{content}</Text></div>

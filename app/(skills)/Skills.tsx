@@ -3,20 +3,28 @@ import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTo
 import style from './style.module.css'
 import SkillStackModel from "./SkillStackModel"
 import { SkillStackIconItem } from './SkillStackIconItem'
+import Text from '../(components)/(text)/Text'
+import AppClassName from '../AppClassName'
+import { SectionHeaderDivider } from '../(components)/(section-header-divider)/SectionHeaderDivider'
 
 export function Skills() {
     const { frontend: frontendModels, tools: toolsModels, backend: backendModels } = SkillStackModel
+    const {sectionContainerSecondBg, sectionContainerXPadding, headerContentYPadding} = AppClassName
     return (
-        <div id="skills" className="bg-gray-50 px-12">
+        <div id="skills" className={`${sectionContainerSecondBg} ${sectionContainerXPadding}`}>
             <SectionTopSpacer />
-            <div className="flex flex-row justify-center">
-                <div className="basis-6/12 grow-0 flex-none flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center">
+                <div className="basis-1/2 grow-0 flex-none flex flex-col justify-center items-center">
                     <SectionTitle>Skills</SectionTitle>
-                    <div className="text-sky-500">Tech I use</div>
-                    <br />
-                    <div className="text-gray-500">Here're some programming languages, tools and frameworks I use.</div>
+                    <div>
+                        <Text color={AppClassName.subtitleTextColor}>Tech I use</Text>
+                    </div>
+                    <div className={headerContentYPadding}>
+                        <Text>Here're some programming languages, tools and frameworks I use.</Text>
+                    </div>
                 </div>
-                <div className="basis-0 grow flex-none flex flex-col items-start pl-4">
+                <SectionHeaderDivider />
+                <div className="basis-1/2 grow-0 flex-none flex flex-col items-start">
                     <div>
                         <div className={`${style.title}`}>Front-end</div>
                         <br />

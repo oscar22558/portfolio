@@ -1,4 +1,4 @@
-import { SectionContainer } from '../(components)/(section-container)/SectionContainer'
+import { SectionContentContainer } from '../(components)/(section-content-container)/SectionContainer'
 import { SectionTitle } from '../(components)/(section-title)/SectionTitle'
 import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
 import { ProjectCard } from './(project-card)/ProjectCard'
@@ -31,7 +31,7 @@ export function Projects() {
 
     return (
         <div id="projects" className={`${style.container} bg-gray-100 px-12 flex flex-col justify-start`}>
-            <SectionContainer>
+            <SectionContentContainer>
                 <SectionTopSpacer />
                 <div>
                     <div className="flex flex-col justify-center items-start">
@@ -55,7 +55,7 @@ export function Projects() {
                     </div>
                 </div>
                 <SectionTopSpacer />
-            </SectionContainer>
+            </SectionContentContainer>
 
         </div>
     )
