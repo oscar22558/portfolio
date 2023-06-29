@@ -1,3 +1,4 @@
+import { Icon } from "../(icon)/Icon"
 import { TimelineModel } from "./TimelineBlockModel"
 import style from "./style.module.css"
 
@@ -14,9 +15,7 @@ export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
                 <div className="pt-4 text-gray-500 text-right">{leftContent}</div>
             </div>
             <div>
-                <div className={`rounded-full h-12 w-12 bg-sky-500 text-white flex justify-center items-center`}>
-                    <img className={style["svg-color"]} src={icon} alt="" height={24} width={24} />
-                </div>
+                <Icon src={icon}/>
             </div>
             <div className="basis-0 grow px-8 flex flex-col justify-start items-start">
                 <div className=" text-left">{rightTitle}</div>

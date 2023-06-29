@@ -1,11 +1,13 @@
 import { SectionContentContainer } from '../(components)/(section-content-container)/SectionContainer'
 import { SectionTitle } from '../(components)/(section-title)/SectionTitle'
 import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
+import AppClassName from '../AppClassName'
 import { ProjectCard } from './(project-card)/ProjectCard'
 import { TechTagContainer } from './TechTagContainer'
 import style from './style.module.css'
 
 export function Projects() {
+    const {sectionHeaderContainer} = AppClassName
     const models = [
         {
             img: "/robocoach-cover.png",
@@ -18,23 +20,23 @@ export function Projects() {
         {
             img: "/smartrehab-cover-960.png",
             title: "SmartRehab (Mobile app)",
-            href: "/works/smart-rehab",
+            href: "https://www.sail.hku.hk/ai-rehab-exercise",
             techTags: ["TypeScrtip", "React Native", "Redux"]
         },
         {
             img: "/smartrehab-portal-cover-960.png",
             title: "SmartRehab Therapist Portal (web)",
-            href: "/works/smart-rehab",
+            href: "http://147.8.181.76:4200/",
             techTags: ["JavaScript", "React", "Redux", "HTML/CSS", "TailWind"]
         }
     ]
 
     return (
-        <div id="projects" className={`${style.container} bg-gray-100 px-12 flex flex-col justify-start reveal`}>
+        <div id="projects" className="bg-gray-100 flex flex-col justify-start reveal">
             <SectionContentContainer>
                 <SectionTopSpacer />
                 <div>
-                    <div className="flex flex-col justify-center items-center lg:items-start">
+                    <div className={`${sectionHeaderContainer} lg:items-start`}>
                         <SectionTitle>Projects</SectionTitle>
                         <div className="text-sky-500">Some backend and frontend projects I worked on</div>
                     </div>
