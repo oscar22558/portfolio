@@ -10,7 +10,7 @@ import Text from '../(components)/(text)/Text'
 export function Skills() {
     const { sectionContainerSecondBg, sectionContainerXPadding, headerContentYPadding, sectionHeaderContainer} = AppClassName
     return (
-        <div id="skills" className={`${sectionContainerSecondBg} ${sectionContainerXPadding}`}>
+        <div id="skills" className={`${sectionContainerSecondBg} ${sectionContainerXPadding} reveal`}>
             <SectionTopSpacer />
             <div className="flex flex-col lg:flex-row">
                 <div className={sectionHeaderContainer}>

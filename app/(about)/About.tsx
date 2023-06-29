@@ -10,7 +10,7 @@ import { SectionHeaderDivider } from '../(components)/(section-header-divider)/S
 export function About() {
     const {sectionContainerXPadding, headerContentYPadding, sectionHeaderContainer} = AppClassName
     return (
-        <div id="about" className={`${style.container} ${sectionContainerXPadding}`}>
+        <div id="about" className={`${style.container} ${sectionContainerXPadding} reveal`}>
             <SectionTopSpacer />
             <div className="flex flex-col-reverse lg:flex-row">
 

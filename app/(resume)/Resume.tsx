@@ -9,7 +9,7 @@ import AppClassName from "../AppClassName";
 export function Resume(){
     const {headerContentYPadding, sectionHeaderContainer} = AppClassName
     return (
-        <div id="resume" className="px-12">
+        <div id="resume" className="px-12 reveal">
             <SectionTopSpacer />
             <div className="flex flex-col-reverse xl:flex-row justify-start items-center">
                 <div className="basis-1/2 flex flex-col items-center">

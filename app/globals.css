@@ -68,3 +68,14 @@ html:focus-within {
     color: #333;
     box-shadow: 0px 0px 23px 6px rgba(0, 0, 0, 0.14);
 }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

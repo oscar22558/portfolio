@@ -14,7 +14,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html lang="en" >
             <body className={`${inter.className}`}>
                 {children}
                 <div id="top-of-site-pixel-anchor"></div>

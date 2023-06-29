@@ -7,10 +7,12 @@ import { Contact } from './(contact)/Contact'
 import { MobileTopBar } from './(mobile-top-bar)/MobileTopBar'
 import { Resume } from './(resume)/Resume'
 import { Footer } from './(footer)/Footer'
+import { SectionRevealContainer } from './(components)/(section-reveal-container)/SectionRevealContainer'
 
 export default function App() {
+
     return (
-        <>
+        <SectionRevealContainer>
             <TopBar />
             <MobileTopBar />
             <Home />
@@ -20,6 +22,6 @@ export default function App() {
             <Projects />
             <Contact />
             <Footer />
-        </>
+        </SectionRevealContainer>
     )
 }

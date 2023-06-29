@@ -30,15 +30,15 @@ export function Projects() {
     ]
 
     return (
-        <div id="projects" className={`${style.container} bg-gray-100 px-12 flex flex-col justify-start`}>
+        <div id="projects" className={`${style.container} bg-gray-100 px-12 flex flex-col justify-start reveal`}>
             <SectionContentContainer>
                 <SectionTopSpacer />
                 <div>
-                    <div className="flex flex-col justify-center items-start">
+                    <div className="flex flex-col justify-center items-center lg:items-start">
                         <SectionTitle>Projects</SectionTitle>
                         <div className="text-sky-500">Some backend and frontend projects I worked on</div>
                     </div>
-                    <div className={`flex flex-row justify-start flex-wrap ${style["cards-container"]}`}>
+                    <div className={`flex flex-row justify-center lg:justify-start flex-wrap ${style["cards-container"]}`}>
                         {
                             models.map(({ href, img, techTags, title }, index) => (
                                 <div className="pl-12 pt-8">
