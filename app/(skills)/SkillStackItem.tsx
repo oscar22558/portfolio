@@ -16,7 +16,7 @@ export function SkillStackItem({children, index, progress = 0}: Props){
     const minSize = 70
     return <div 
                 className={`mt-6 ml-6 text-lg shadow p-4 hover:shadow-xl hover:bg-white 
-                    transition ease duration-500 border-t-4 lg:border-l-4 lg:border-t-0 ${color} text-gray-500 relative`} 
+                    transition ease duration-500 border-t-4 lg:border-l-4 lg:border-t-0 ${color} text-gray-500 relative flex flex-row items-center`} 
                 style={{minHeight: minSize, minWidth: minSize}}
             >
         {children}
