@@ -8,13 +8,16 @@ import { MobileTopBar } from './(mobile-top-bar)/MobileTopBar'
 import { Resume } from './(resume)/Resume'
 import { Footer } from './(footer)/Footer'
 import { SectionRevealContainer } from './(components)/(section-reveal-container)/SectionRevealContainer'
+import { TopBarContainer } from './(top-bar)/TopBarContainer'
 
 export default function App() {
 
     return (
         <SectionRevealContainer>
-            <TopBar />
-            <MobileTopBar />
+            <TopBarContainer>
+                <TopBar />
+                <MobileTopBar />
+            </TopBarContainer>
             <Home />
             <About />
             <Skills />

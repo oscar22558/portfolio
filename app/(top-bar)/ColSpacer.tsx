@@ -1,3 +1,3 @@
 export function ColSpacer(){
-    return <span className="w-4"></span>
+    return <span className="ml-4"></span>
 }

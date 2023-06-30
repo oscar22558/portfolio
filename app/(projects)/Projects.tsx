@@ -32,7 +32,7 @@ export function Projects() {
     ]
 
     return (
-        <div id="projects" className="bg-gray-100 flex flex-col justify-start reveal">
+        <div id="projects" className="section-container bg-gray-100 flex flex-col justify-start reveal">
             <SectionContentContainer>
                 <SectionTopSpacer />
                 <div>

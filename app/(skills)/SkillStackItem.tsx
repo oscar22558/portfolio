@@ -14,7 +14,11 @@ export function SkillStackItem({children, index, progress = 0}: Props){
     const color = borderColors[index%6]
     const badgeBgColor = badgeBgColors[index%6]
     const minSize = 70
-    return <div className={`mt-6 ml-6 text-lg shadow p-4 hover:shadow-xl hover:bg-white transition ease duration-500 border-l-4 ${color} text-gray-500 relative`} style={{minHeight: minSize, minWidth: minSize}}>
+    return <div 
+                className={`mt-6 ml-6 text-lg shadow p-4 hover:shadow-xl hover:bg-white 
+                    transition ease duration-500 border-t-4 lg:border-l-4 lg:border-t-0 ${color} text-gray-500 relative`} 
+                style={{minHeight: minSize, minWidth: minSize}}
+            >
         {children}
         <div className={`${badgeBgColor} border border-transparent rounded-full h-8 w-8 absolute top-0 right-0 ${style.badge} shadow text-white text-base flex justify-center items-center`}>
             <span className="text-center align-middle text-sm">

@@ -9,7 +9,8 @@
 }
 
 .link{
-    transition: all .3s ease;
+    border-color: var(--theme-color);
+    transition: color .3s ease;
 }
 
 .link:hover{

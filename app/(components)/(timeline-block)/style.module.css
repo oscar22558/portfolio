@@ -1,3 +1,8 @@
-.timeline-container{
-    height: 500px;
+.container{
+    height: 300px;
+}
+
+.container:hover .icon{
+   transform: scale(1.05);
+   background-color: rgb(125 211 252);
 }

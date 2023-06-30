@@ -1,5 +1,5 @@
 .card-container{
-    border-right-color: var(--theme-color);
+    border-top-color: var(--theme-color);
 }
 
 .card-container-width{
@@ -33,6 +33,9 @@
     }
     .card-container-height{
         height: 230px;
+    }
+    .card-container{
+        border-right-color: var(--theme-color);
     }
 }
 

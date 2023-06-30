@@ -79,3 +79,7 @@ html:focus-within {
     transform: translateY(0);
     opacity: 1;
 }
+
+.section-link-selected{
+    color: var(--theme-color);
+}

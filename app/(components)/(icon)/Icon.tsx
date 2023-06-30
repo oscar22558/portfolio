@@ -5,13 +5,15 @@ interface Props{
     color?: string
     colorClass?: string
     size?: number
+    className?: string
 }
 
 export function Icon({
     src, 
     color = "",
     colorClass = "",
-    size
+    size,
+    className = "",
 }: Props){
     const iconSize = size != null ? `${size/2}px` : "1.5rem"
     const iconStyle = {height: iconSize, width: iconSize}
@@ -29,7 +31,7 @@ export function Icon({
     return (
         <div 
             className={`rounded-full bg-sky-500 text-white flex justify-center items-center 
-                ${size != null ? "" : "h-12 w-12"} ${colorClass}`} 
+                ${size != null ? "" : "h-12 w-12"} ${colorClass} ${className}`} 
             style={containerStyle}
         >
             <img className={style["svg-color"]} src={src} alt="" style={iconStyle} />
