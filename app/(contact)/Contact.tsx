@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon } from "../(components)/(icon)/Icon";
 import { SectionContentContainer } from "../(components)/(section-content-container)/SectionContainer";
 import { SectionTitle } from "../(components)/(section-title)/SectionTitle";
@@ -18,18 +19,19 @@ export function Contact(){
             <div className={`${sectionHeaderContainer} lg:items-start`}>
                 <SectionTitle>Contact</SectionTitle>
                 <div className={subtitleTextColor}>Get in touch</div>
-            </div>
-            <div className={`${style["methods-container"]} flex flex-row justift-start items-center w-full flex-wrap`}>
-                    {
-                        contactModel.map(({img, title}, index) => (
-                            <div key={index} className="flex flex-row justify-start items-center ml-8 mt-8">
-                                <Icon src={img} size={40}/>
-                                <Text className="ml-2">{title}</Text>
-                            </div>
-                        ))
-                    }
 
             </div>
+            <div className={`${style["methods-container"]} flex flex-row justift-start items-center w-full flex-wrap`}>
+                {
+                    contactModel.map(({img, title}, index) => (
+                        <div key={index} className="flex flex-row justify-start items-center ml-8 mt-8">
+                            <Icon src={img} size={40}/>
+                            <Text className="ml-2">{title}</Text>
+                        </div>
+                    ))
+                }
+            </div>
+
         </SectionContentContainer>
     </div>
 }

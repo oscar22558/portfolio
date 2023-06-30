@@ -2,26 +2,34 @@
     min-height: 50vh;
     color: rgb(var(--foreground-rgb));
     background-color: #000;
+    background: url('/home-bg.jpg');
+}
+
+.bg-layer{
+    background-color: #000000d8;
 }
 
 .title{
     font-family: "Playfair Display", Georgia, serif;
+    z-index: 1;
 }
 
 .subtitle{
     font-family: "Playfair Display", Georgia, serif;
+    z-index: 1;
+
 }
 
 .colored-text{
     color: var(--theme-color);
-    transition: color .5s ease;
-    -webkit-transition: color .5s ease;
-    -moz-transition: color .5s ease;
-    -ms-transition: color .5s ease;
-    -o-transition: color .5s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 .colored-text:hover{
-    color: #fff; 
+    transform: scale(1.05);
 }
 
 .initial-ease{
@@ -42,6 +50,9 @@
     -moz-transition: transform 1s ease, color .5s ease;
     -ms-transition: transform 1s ease, color .5s ease;
     -o-transition: transform 1s ease, color .5s ease;
+}
+
+.initial-ease:hover{
 }
 
 .about-me-container{
