@@ -6,8 +6,8 @@ export function Home(){
         <div className={`${style["bg-layer"]} absolute inset-0 z-0`}></div>
         <SectionTopSpacer />
         <div className={"flex flex-col justify-center items-center grow"}>
-            <div className={`flex justify-center text-7xl tracking-tight ${style.title}`}>Oscar Shum</div>
-            <div className={`flex justify-center text-2xl py-8 ${style.subtitle} ${style["initial-ease"]}`}>
+            <div className={`flex justify-center text-7xl tracking-tight transition duration-300 ${style.title}`}>Oscar Shum</div>
+            <div className={`flex justify-center text-2xl py-8 text-gray-400 ${style.subtitle} ${style["initial-ease"]}`}>
                 <span className={style["colored-text"]}>Full stack developer</span>
             </div>
 
