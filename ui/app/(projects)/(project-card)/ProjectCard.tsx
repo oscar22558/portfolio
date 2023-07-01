@@ -1,6 +1,7 @@
 "use client"
 import { ReactNode } from 'react'
 import style from './style.module.css'
+import Image from 'next/image'
 
 interface Props{
     href?: string
@@ -9,7 +10,7 @@ interface Props{
     size?: number
     techTags?: ReactNode | ReactNode[]
 }
-export function ProjectCard({href, title, img, size = 400, techTags}: Props){
+export function ProjectCard({href, title, img = "", size = 400, techTags}: Props){
     const containerStyle = {width: size, height: size}
     const imgStyle= {width: size, height: size}
 
@@ -26,7 +27,7 @@ export function ProjectCard({href, title, img, size = 400, techTags}: Props){
             onClick={onClick(href)}
         >
             <div className="h-full w-full flex justify-center items-center">
-                <img src={img} className="object-cover" style={imgStyle}/>
+                <Image alt="" src={img} className="object-cover" style={imgStyle}/>
             </div>
             <div className={`absolute inset-x-0 ${style["caption-container"]} p-4`}>
                 <div className='text-white text-base font-semibold'>{title}</div>

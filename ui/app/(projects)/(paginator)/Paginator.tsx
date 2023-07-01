@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ReactNode, useState } from "react"
 
 interface Props<T>{
@@ -15,8 +16,8 @@ export function Paginator<T>({models, render}: Props<T>){
     return (
         <div>
             {render(models[index], index)}
-            <img src="/caret-right.svg" onClick={onNext} style={{width: 25, height: 25}} className="cursor-pointer"/>
-            <img src="/caret-left.svg" onClick={onPrevious}style={{width: 25, height: 25}} className="cursor-pointer"/>
+            <Image src="/caret-right.svg" onClick={onNext} style={{ width: 25, height: 25 }} className="cursor-pointer" alt=""/>
+            <Image src="/caret-left.svg" onClick={onPrevious} style={{ width: 25, height: 25 }} className="cursor-pointer" alt=""/>
         </div>
     )
 }

@@ -19,7 +19,7 @@ export function Skills() {
                         <Text color={AppClassName.subtitleTextColor}>Tech I use</Text>
                     </div>
                     <div className={`${headerContentYPadding}`}>
-                        <Text className="text-center">Here're some programming languages, tools and frameworks I use.</Text>
+                        <Text className="text-center">Here&apos;re some programming languages, tools and frameworks I use.</Text>
                     </div>
                 </div>
                 <SectionHeaderDivider />

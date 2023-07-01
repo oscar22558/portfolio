@@ -1,3 +1,4 @@
+import Image from "next/image"
 import style from "./style.module.css"
 
 interface Props{
@@ -34,7 +35,7 @@ export function Icon({
                 ${size != null ? "" : "h-12 w-12"} ${colorClass} ${className}`} 
             style={containerStyle}
         >
-            <img className={style["svg-color"]} src={src} alt="" style={iconStyle} />
+            <Image className={style["svg-color"]} src={src} alt="" style={iconStyle} />
         </div>
     )
 }

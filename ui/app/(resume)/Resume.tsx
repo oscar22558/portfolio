@@ -25,7 +25,7 @@ export function Resume(){
                     <SectionTitle>Resume</SectionTitle>
                     <div className="text-sky-500">My studys and professional experiences</div>  
                     <div className={`${headerContentYPadding}`}>
-                        <Text className="text-center">Here're my studys and professional experiences.</Text>
+                        <Text className="text-center">Here&apos;re my studys and professional experiences.</Text>
                     </div>
                 </div>
             </div>

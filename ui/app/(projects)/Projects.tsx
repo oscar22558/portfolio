@@ -10,7 +10,7 @@ export function Projects() {
     const {sectionHeaderContainer} = AppClassName
     const models = [
         {
-            img: "/robocoach-cover.png",
+            img: "/robocoach-cover.jpg",
             title: "Robocoach (backend)",
             href: "https://www.hkuit.com/robocoach",
             techTags: [
@@ -43,8 +43,8 @@ export function Projects() {
                     <div className={`flex flex-row justify-center lg:justify-start flex-wrap ${style["cards-container"]}`}>
                         {
                             models.map(({ href, img, techTags, title }, index) => (
-                                <div className="pl-12 pt-8">
-                                    <ProjectCard key={index} img={img} title={title} href={href} techTags={(
+                                <div key={index} className="pl-12 pt-8">
+                                    <ProjectCard img={img} title={title} href={href} techTags={(
                                         techTags.map((title, index) => (
                                             <TechTagContainer key={index} title={title} />
                                         ))

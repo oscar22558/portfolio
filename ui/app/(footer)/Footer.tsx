@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Text from "../(components)/(text)/Text";
 import { MouseEventHandler } from "react";
+import Image from "next/image";
 
 export function Footer(){
     const onClick: MouseEventHandler<HTMLAnchorElement> = (e) => {
@@ -23,7 +24,7 @@ export function Footer(){
             {
                 linksModel.map(({href, img}, index) => (
                     <Link key={index} href={href} onClick={onClick}>
-                        <img src={img} className="w-6 h-6 svg-white mr-4"/>
+                        <Image src={img} className="w-6 h-6 svg-white mr-4" alt=""/>
                     </Link>
                 ))
             }
