@@ -21,7 +21,7 @@ export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
             <div className="basis-0 grow px-8 flex flex-col justify-start items-start">
                 <div className=" text-left mb-2">{rightTitle}</div>
                 {rightContentList.map((content, index) => (
-                    <div className="mt-2 text-gray-500  text-left">{content}</div>
+                    <div key={index} className="mt-2 text-gray-500  text-left">{content}</div>
                 ))}
             </div>
         </div>

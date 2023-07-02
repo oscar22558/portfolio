@@ -14,7 +14,7 @@ export function SkillStackIconItem({imgSrc, alt, children, ...SkillStackItemProp
     return (
         <SkillStackItem {...SkillStackItemProps}>
             <div className="flex flex-row items-center justify-start h-full">
-                <Image src={imgSrc+`?${timeStamp}`} alt={alt} height={size} width={size}/>
+                <Image src={imgSrc} alt={alt} height={size} width={size} style={{height: 42, width: 42, objectFit: "contain"}}/>
                 {children}
             </div>
 

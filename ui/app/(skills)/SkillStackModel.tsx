@@ -8,7 +8,7 @@ const SkillStackModel = [
                 progress: 77,
             },
             {
-                img: "/ts-icon.png",
+                img: "/ts-icon.svg",
                 title: "TypeScript",
                 progress: 77,
             },
@@ -88,7 +88,7 @@ const SkillStackModel = [
                 progress: 77,
             },
             {
-                img: "/github-icon.png",
+                img: "/github-icon.svg",
                 title: "Github",
                 progress: 77,
             },
