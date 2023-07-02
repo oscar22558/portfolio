@@ -1,0 +1,1 @@
+export const FullResumeUrl = "https://drive.google.com/file/d/1xNPyApZZddaKyBz5QIyT8BjXuOeb1tjf/view?usp=drive_link"
