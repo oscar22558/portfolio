@@ -5,6 +5,7 @@ import Text from "../(components)/(text)/Text";
 import { Education } from "../(education)/Education";
 import { Experience } from "../(experience)/Experience";
 import AppClassName from "../AppClassName";
+import { FullResumeButton } from "./FullResumeButton";
 
 export function Resume(){
     const {headerContentYPadding, sectionHeaderContainer, sectionContainerXPadding} = AppClassName
@@ -26,7 +27,9 @@ export function Resume(){
                     <div className="text-sky-500">My studys and professional experiences</div>  
                     <div className={`${headerContentYPadding}`}>
                         <Text className="text-center">Here&apos;re my studys and professional experiences.</Text>
+
                     </div>
+                    <FullResumeButton />
                 </div>
             </div>
             <SectionTopSpacer />

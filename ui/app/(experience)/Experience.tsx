@@ -1,7 +1,7 @@
 import style from "./style.module.css";
 import { TimelineContainer } from "../(components)/(timeline-container)/TimelineContainer";
 import { TimelineBlock } from "../(components)/(timeline-block)/TimelineBlock";
-import { ExpTimelineModels } from "./TimelineModels";
+import { ExpTimelineModels } from "./ExpTimelineModels";
 
 export function Experience() {
     return <div id="exp" className={`${style.container}`}>

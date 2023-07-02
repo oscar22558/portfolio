@@ -10,8 +10,6 @@ export function Contact(){
     const {sectionHeaderContainer, subtitleTextColor} = AppClassName
     const contactModel = [
         {img: "/location-filled-icon.svg", title: "Toronto, Canada"},
-        {img: "/phone-filled-icon.svg", title: "+1 647 914 6569"},
-        {img: "/whatsapp-unfilled-icon.svg", title: "+852 5132 7488"},
         {img: "/email-filled-icon.svg", title: "oscarpeb471@gmail.com"},
     ]
     return <div id="contact" className="py-16 reveal">

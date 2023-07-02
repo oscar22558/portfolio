@@ -16,8 +16,8 @@ export function Icon({
     size,
     className = "",
 }: Props){
-    const iconSize = size != null ? `${size/2}px` : "1.5rem"
-    const iconStyle = {height: iconSize, width: iconSize}
+    const iconSize = size != null ? size/2 : 24
+    const iconDimension = {height: iconSize, width: iconSize}
     var containerStyle = {}
     if(color){
         containerStyle = {backgroundColor: color}
@@ -35,7 +35,7 @@ export function Icon({
                 ${size != null ? "" : "h-12 w-12"} ${colorClass} ${className}`} 
             style={containerStyle}
         >
-            <Image className={style["svg-color"]} src={src} alt="" style={iconStyle} />
+            <Image className={style["svg-color"]} src={src} alt="" {...iconDimension} style={iconDimension}/>
         </div>
     )
 }

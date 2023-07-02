@@ -2,7 +2,8 @@
     min-height: 50vh;
     color: rgb(var(--foreground-rgb));
     background-color: #000;
-    background: url('/home-bg.jpg');
+    background-image: url('/home-bg.jpg');
+    background-size: cover;
 }
 
 .bg-layer{

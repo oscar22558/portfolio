@@ -24,7 +24,7 @@ export function Projects() {
             techTags: ["TypeScrtip", "React Native", "Redux"]
         },
         {
-            img: "/smartrehab-portal-cover-960.png",
+            img: "/smartrehab-portal-cover.png",
             title: "SmartRehab Therapist Portal (web)",
             href: "http://147.8.181.76:4200/",
             techTags: ["JavaScript", "React", "Redux", "HTML/CSS", "TailWind"]

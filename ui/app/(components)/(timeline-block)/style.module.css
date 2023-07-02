@@ -3,6 +3,6 @@
 }
 
 .container:hover .icon{
-   transform: scale(1.05);
-   background-color: rgb(125 211 252);
+   transform: scale(1.20);
+   /* background-color: rgb(125 211 252); */
 }

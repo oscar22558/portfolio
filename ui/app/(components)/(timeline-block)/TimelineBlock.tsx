@@ -8,6 +8,7 @@ interface Props{
 }
 export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
     const {leftContent, leftTitle, rightContent, rightTitle} = model
+    const rightContentList = typeof rightContent === "string" ? [rightContent] : rightContent
     return (
         <div className={`flex flex-row items-start ${style["container"]}`}>
             <div className="basis-0 grow px-8 flex flex-col justify-start items-end">
@@ -18,8 +19,10 @@ export function TimelineBlock({model, icon = "/graduation-cap.svg"}: Props){
                 <Icon src={icon} className={`${style["icon"]} transition duration-500`}/>
             </div>
             <div className="basis-0 grow px-8 flex flex-col justify-start items-start">
-                <div className=" text-left">{rightTitle}</div>
-                <div className="pt-4 text-gray-500  text-left">{rightContent}</div>
+                <div className=" text-left mb-2">{rightTitle}</div>
+                {rightContentList.map((content, index) => (
+                    <div className="mt-2 text-gray-500  text-left">{content}</div>
+                ))}
             </div>
         </div>
     )

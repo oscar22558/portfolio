@@ -27,7 +27,7 @@ export function ProjectCard({href, title, img = "", size = 400, techTags}: Props
             onClick={onClick(href)}
         >
             <div className="h-full w-full flex justify-center items-center">
-                <Image alt="" src={img} className="object-cover" style={imgStyle}/>
+                <Image alt="" src={img} {...imgStyle} style={{...imgStyle, objectFit: "cover"}}/>
             </div>
             <div className={`absolute inset-x-0 ${style["caption-container"]} p-4`}>
                 <div className='text-white text-base font-semibold'>{title}</div>

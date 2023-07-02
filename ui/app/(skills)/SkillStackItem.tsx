@@ -20,7 +20,7 @@ export function SkillStackItem({children, index, progress = 0}: Props){
                 style={{minHeight: minSize, minWidth: minSize}}
             >
         {children}
-        <div className={`${badgeBgColor} border border-transparent rounded-full h-8 w-8 absolute top-0 right-0 ${style.badge} shadow text-white text-base flex justify-center items-center`}>
+        <div className={`${badgeBgColor} hidden border border-transparent rounded-full h-8 w-8 absolute top-0 right-0 ${style.badge} shadow text-white text-base flex justify-center items-center`}>
             <span className="text-center align-middle text-sm">
                 {progress}%
             </span>
