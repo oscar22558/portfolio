@@ -2,17 +2,19 @@ import { SectionContentContainer } from '../(components)/(section-content-contai
 import { SectionTitle } from '../(components)/(section-title)/SectionTitle'
 import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
 import AppClassName from '../AppClassName'
+import { ExternalLinks } from '../ExternalLinks'
 import { ProjectCard } from './(project-card)/ProjectCard'
 import { TechTagContainer } from './TechTagContainer'
 import style from './style.module.css'
 
 export function Projects() {
     const {sectionHeaderContainer} = AppClassName
+    const { robocoachHkuit, smartreahbSail, smartrehabPortalHome} = ExternalLinks
     const models = [
         {
             img: "/robocoach-cover.jpg",
             title: "Robocoach (Backend)",
-            href: "https://www.hkuit.com/robocoach",
+            href: robocoachHkuit,
             techTags: [
                 "PHP", "Laravel", "PostgreSQL", "Docker", "AWS"
             ]
@@ -20,13 +22,13 @@ export function Projects() {
         {
             img: "/smartrehab-cover-960.png",
             title: "SmartRehab (Mobile app)",
-            href: "https://www.sail.hku.hk/ai-rehab-exercise",
+            href: smartreahbSail,
             techTags: ["TypeScript", "React Native", "Redux"]
         },
         {
             img: "/smartrehab-portal-cover.png",
             title: "SmartRehab Therapist Portal (Web frontend)",
-            href: "http://147.8.181.76:4200/",
+            href: smartrehabPortalHome,
             techTags: ["JavaScript", "React", "Redux", "HTML/CSS", "TailWind"]
         }
     ]
