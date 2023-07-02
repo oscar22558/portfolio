@@ -3,7 +3,6 @@ export const TopBarLinksModel = [
     {id: "about", text:"About", href: "#about"},
     {id: "skills", text:"Skills", href: "#skills"},
     {id: "resume", text:"Resume", href: "#resume"},
-    {id: "projects", text:"Projects", href: "#project"},
-    {id: "contact", text:"Contact", href: "#contact"},
+    {id: "projects", text:"Projects", href: "#projects"},
 ] 
 export default TopBarLinksModel
