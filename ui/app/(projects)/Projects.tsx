@@ -11,21 +11,21 @@ export function Projects() {
     const models = [
         {
             img: "/robocoach-cover.jpg",
-            title: "Robocoach (backend)",
+            title: "Robocoach (Backend)",
             href: "https://www.hkuit.com/robocoach",
             techTags: [
-                "PHP", "Larevel", "PostgreSQL", "Docker", "AWS"
+                "PHP", "Laravel", "PostgreSQL", "Docker", "AWS"
             ]
         },
         {
             img: "/smartrehab-cover-960.png",
             title: "SmartRehab (Mobile app)",
             href: "https://www.sail.hku.hk/ai-rehab-exercise",
-            techTags: ["TypeScrtip", "React Native", "Redux"]
+            techTags: ["TypeScript", "React Native", "Redux"]
         },
         {
             img: "/smartrehab-portal-cover.png",
-            title: "SmartRehab Therapist Portal (web)",
+            title: "SmartRehab Therapist Portal (Web frontend)",
             href: "http://147.8.181.76:4200/",
             techTags: ["JavaScript", "React", "Redux", "HTML/CSS", "TailWind"]
         }

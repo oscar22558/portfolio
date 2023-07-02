@@ -23,6 +23,11 @@ const SkillStackModel = [
                 progress: 77,
             },
             {
+                img: "/redux-icon.png",
+                title: "Redux",
+                progress: 77,
+            },
+            {
                 img: "/tailwind-icon.png",
                 title: "TailWind",
                 progress: 77,
