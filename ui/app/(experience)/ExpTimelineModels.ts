@@ -1,6 +1,6 @@
 export const ExpTimelineModels = [
     {
-        leftTitle: "Software Engineer",
+        leftTitle: "Research Assistant (Software Engineer)",
         leftContent: "2021 - 2023",
         rightTitle: "The department of electrical and electronic engineering, The University of Hong Kong",
         rightContent: [
