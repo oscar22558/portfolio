@@ -19,18 +19,16 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ${{ vars.AWS_DEFAULT_REGION }}
     - name: Deploy to prod server
-      uses: appleboy/ssh-action@v0.1.4
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.AWS_EC2_IP }}
         username: ubuntu
-        key: ${{ vars.AWS_EC2_SSH_KEY }}
+        key: ${{ secrets.AWS_EC2_SSH_KEY }}
         script: |
           cd $HOME/apps/portfolio
           git pull
-          echo ${{ secrets.DOCKERHUB_EC2_PASSWORD }} | docker login --username ${{ secrets.DOCKERHUB_USER }} --password-stdin
           docker compose stop 
           docker compose pull && docker compose up -d
-          docker logout
               
     - name: Remove Github Actions IP from security group
       run: |
