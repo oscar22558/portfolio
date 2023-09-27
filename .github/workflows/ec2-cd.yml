@@ -18,15 +18,12 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ${{ vars.AWS_DEFAULT_REGION }}
-    - name: Debug
-      run: |
-        echo ${{ secrets.AWS_EC2_SSH_KEY }}
     - name: Deploy to prod server
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.AWS_EC2_IP }}
         username: ubuntu
-        key: ${{ secrets.AWS_EC2_SSH_KEY }}
+        key: ${{ vars.AWS_EC2_SSH_KEY }}
         script: |
           cd $HOME/apps/portfolio
           git pull
