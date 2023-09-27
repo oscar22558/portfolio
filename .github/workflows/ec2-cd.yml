@@ -2,7 +2,7 @@ name: EC2 CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "main" ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
