@@ -33,7 +33,7 @@ jobs:
         script: |
           cd $HOME/apps/portfolio
           git pull
-          echo ${{ secerts.DOCKERHUB_EC2_PASSWORD }} | docker login --username ${{ secerts.DOCKERHUB_USER }} --password-stdin
+          echo ${{ secrets.DOCKERHUB_EC2_PASSWORD }} | docker login --username ${{ secrets.DOCKERHUB_USER }} --password-stdin
           docker compose stop 
           docker compose pull && docker compose up -d
           docker logout
