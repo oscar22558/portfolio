@@ -24,7 +24,7 @@ jobs:
       with:
         host: ${{ secrets.AWS_EC2_IP }}
         username: ubuntu
-        key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.AWS_EC2_SSH_KEY }}
         script: |
           cd $HOME/apps/portfolio
           git pull
