@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import style from "./style.module.css"
 import AppClassName from "@/app/AppClassName";
 
 interface Props{
@@ -9,7 +8,7 @@ interface Props{
 }
 
 export function Text({children, className, color = AppClassName.contentTextColor}: Props){
-    return <span className={`${color} text-base inline-block ${style["max-width"]} ${className}`}>{children}</span>
+    return <span className={`${color} text-base inline-block max-w-[600px] ${className}`}>{children}</span>
 }
 
 export default Text

@@ -1,31 +1,11 @@
 .container{
-    min-height: 50vh;
-    color: rgb(var(--foreground-rgb));
-    background-color: #000;
-    background-image: url('/home-bg.jpg');
-    background-size: cover;
 }
 
 .bg-layer{
     background-color: #000000d8;
 }
-
-.title{
-    font-family: "Playfair Display", Georgia, serif;
-    z-index: 1;
-}
-
 .title:hover{
     transform: scale(1.05);
-}
-
-.subtitle{
-    font-family: "Playfair Display", Georgia, serif;
-    z-index: 1;
-
-}
-
-.colored-text{
 }
 
 .initial-ease{
