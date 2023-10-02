@@ -1,7 +1,8 @@
+import { subtle } from 'crypto'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Raleway } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const raleway = Raleway({subsets: ["latin"]})
 
 export const metadata = {
     title: 'Oscar\'s Portfolio',
@@ -15,7 +16,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" >
-            <body className={`${inter.className}`}>
+            <body className={`${raleway.className}`}>
                 {children}
                 <div id="top-of-site-pixel-anchor"></div>
             </body>
