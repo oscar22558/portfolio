@@ -19,7 +19,6 @@ export default function App() {
             </TopBarContainer>
             <Home />
             <About />
-            <Skills />
             <Resume />
             <Projects />
             <Footer />

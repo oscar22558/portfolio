@@ -8,7 +8,7 @@ interface Props{
 }
 
 export function Text({children, className, color = AppClassName.contentTextColor}: Props){
-    return <span className={`${color} text-base inline-block max-w-[600px] ${className}`}>{children}</span>
+    return <span className={`${color} inline-block max-w-[600px] ${className}`}>{children}</span>
 }
 
 export default Text
