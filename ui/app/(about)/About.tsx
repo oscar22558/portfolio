@@ -6,8 +6,7 @@ import { CheckedItem } from './CheckedItem'
 export function About() {
 
     return (<>
-        <div id="about" className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9]">
-            <SectionTopSpacer />
+        <div id="about" className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9] py-32">
             <div className="text-5xl font-medium"><span>About Me</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8"></div>
             <div className="font-semibold mb-2 flex text-lg"><span>Who am I</span></div>
@@ -32,9 +31,8 @@ export function About() {
             <div className="px-8">
                 <TechStack />
             </div>
-            <SectionTopSpacer />
         </div>
-        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-64">
+        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-48">
             <div className="text-6xl font-medium"><span>About Me</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-16"></div>
             <div className="w-full flex flex-row justify-center px-16">
