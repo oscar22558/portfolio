@@ -8,6 +8,7 @@ import { Resume } from './(resume)/Resume'
 import { Footer } from './(footer)/Footer'
 import { SectionRevealContainer } from './(components)/(section-reveal-container)/SectionRevealContainer'
 import { TopBarContainer } from './(top-bar)/TopBarContainer'
+import { Experience } from './(experience)/Experience'
 
 export default function App() {
 
@@ -19,7 +20,8 @@ export default function App() {
             </TopBarContainer>
             <Home />
             <About />
-            <Resume />
+            <Experience />
+            {/* <Resume /> */}
             <Projects />
             <Footer />
         </SectionRevealContainer>
