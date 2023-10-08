@@ -8,7 +8,7 @@ interface Props{
     size: "base" | "xl"
 }
 export function CheckedItem({children, size}: Props){
-    const fontSize = size === "base" ? "text-based" : "text-xl"
+    const fontSize = size === "base" ? "text-lg" : "text-xl"
     const iconSize = size === "base" ? "20px" : "24px"
     return (
         <div className="flex flex-row flex-1">
