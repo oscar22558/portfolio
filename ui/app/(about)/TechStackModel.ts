@@ -3,4 +3,9 @@ const TechStackModel = {
     Backend: ["Java", "PHP", "Laravel", "Spring Boot", "SQL"],
     Tools: ["Docker", "AWS", "Github", "PostgreSQL"]
 }
+export const TechStackList = [
+    "React", "React Native", "Next.js", "Spring Boot", "Laravel", "JavaScript", "TypeScript", 
+    "Java", "PHP", "SQL", "CSS", "HTML", "TailwindCss",
+    "Docker", "AWS", "Github", "PostgreSQL",
+]
 export default TechStackModel
