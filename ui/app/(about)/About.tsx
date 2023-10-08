@@ -1,9 +1,6 @@
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
 import { Text } from '../(components)/(text)/Text'
 import { TechStack } from './TechStack'
-import { TechStackMobile } from './TechStackMobile'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { CheckedItem } from './CheckedItem'
 
 export function About() {
@@ -11,7 +8,7 @@ export function About() {
     return (<>
         <div id="about" className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9]">
             <SectionTopSpacer />
-            <div className="text-5xl font-medium"><span>About</span></div>
+            <div className="text-5xl font-medium"><span>About Me</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-8"></div>
             <div className="font-semibold mt-8 mb-2 flex"><span>Who am I</span></div>
             <div className="px-8 mb-2">
@@ -37,9 +34,8 @@ export function About() {
             </div>
             <SectionTopSpacer />
         </div>
-        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] h-full">
-            <SectionTopSpacer />
-            <div className="text-6xl font-medium"><span>About</span></div>
+        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-64">
+            <div className="text-6xl font-medium"><span>About Me</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-16"></div>
             <div className="w-full flex flex-row justify-center px-16">
                 <div className="h-full flex flex-col justify-center items-start max-w-[600px]">
@@ -63,12 +59,11 @@ export function About() {
                     </div>
                 </div>
                 <div className="w-[150px] h-full"></div>
-                <div className="max-w-[600px] h-full">
+                <div className="max-w-[600px]">
                     <div className="font-semibold text-xl mb-4"><span>Tech I use</span></div>
                     <TechStack />
                 </div>
             </div>
-            <SectionTopSpacer />
         </div>
     </>
     )
