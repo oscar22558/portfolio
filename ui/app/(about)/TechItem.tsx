@@ -1,4 +1,5 @@
-import { CheckedItem } from "./CheckedItem"
+import { CodeItem } from "./CodeItem"
+import { TechStackIcon } from "./TechStackModel"
 
 interface Props{
     models: string[]
@@ -12,7 +13,7 @@ export function TechItem({title, models}: Props){
                 <div className="inline-block">
                     <div className="bg-[#0ea5e9] rounded-full w-[80px] h-[80px] relative">
                         <img 
-                            src="/frontend-icon.svg" 
+                            src={TechStackIcon[title as keyof typeof TechStackIcon]}
                             style={{width: "44px", height: "44px"}} 
                             className="absolute top-[40px] left-[40px] ml-[-22px] mt-[-22px]"
                             />
@@ -25,7 +26,7 @@ export function TechItem({title, models}: Props){
                 <div className="">
                     {
                         models.map((model, index) => {
-                            return <CheckedItem size="xl">{model}</CheckedItem>
+                            return <CodeItem size="xl">{model}</CodeItem>
                         })
                     }
                 </div>

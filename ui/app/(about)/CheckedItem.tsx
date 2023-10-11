@@ -1,19 +1,9 @@
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ReactNode } from "react";
-import Text from "../(components)/(text)/Text"
+import { ComponentProps } from "react";
+import { IconItem } from "./IconItem";
 
-interface Props{
-    children?: ReactNode
-    size: "base" | "xl"
-}
+type Props = Omit<ComponentProps<typeof IconItem>, "icon">
+
 export function CheckedItem({children, size}: Props){
-    const fontSize = size === "base" ? "text-lg" : "text-xl"
-    const iconSize = size === "base" ? "20px" : "24px"
-    return (
-        <div className="flex flex-row flex-1">
-            <FontAwesomeIcon icon={faCheck} style={{color: "#0ea5e9", height: iconSize, width: iconSize}} />
-            <Text className={`${fontSize} ml-4`}>{children}</Text>
-        </div>
-    )
+    return <IconItem icon={faCheck} size={size}>{children}</IconItem>
 }

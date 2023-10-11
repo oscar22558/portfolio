@@ -2,6 +2,7 @@ import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTo
 import { Text } from '../(components)/(text)/Text'
 import { TechStack } from './TechStack'
 import { CheckedItem } from './CheckedItem'
+import { CodeItem } from './CodeItem'
 
 export function About() {
 
@@ -43,6 +44,17 @@ export function About() {
                     high-performance backend services for diverse product offerings. My commitment to delivering top-notch solutions is unwavering.
                     </Text>
                 </div> 
+                <div className="text-xl font-semibold mb-4"><span>What I can do</span></div>
+                <div className="p-4 mb-8 flex flex-row justify-center w-[1000px]">
+                        <div className="flex flex-col">
+                            <CheckedItem size="xl">Frontend Development</CheckedItem>
+                            <CheckedItem size="xl">Backend Development</CheckedItem>
+                        </div>
+                        <div className="flex flex-col ml-16">
+                            <CheckedItem size="xl">Database Design</CheckedItem>
+                            <CheckedItem size="xl">Cloud Solutions</CheckedItem>
+                        </div>
+                    </div>
                 <TechStack />
             </div>
         </div>

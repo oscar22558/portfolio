@@ -89,9 +89,9 @@ export function TechStackMobile(){
                         </div>
                         <div className="flex justify-start items-center ml-[-0.5rem] mt-[-0.5rem] flex-wrap px-8">
                             {
-                                techStack[key as keyof typeof techStack].map((item, index) => {
-                                    return <TechItem key={index}>{item}</TechItem>
-                                })
+                                // techStack[key as keyof typeof techStack].map((item, index) => {
+                                //     return <TechItem key={index}>{item}</TechItem>
+                                // })
                             }
                         </div>
                     </div>
