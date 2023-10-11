@@ -1,13 +1,12 @@
 import { TechItem } from "./TechItem"
-import TechStackModel, { TechStackList } from "./TechStackModel"
+import TechStackModel from "./TechStackModel"
 
 export function TechStack(){
-    const techStackModel = TechStackList
     return (
-        <div className="mt-[-0.5rem] ml-[-0.5rem] flex flex-row justify-start items-center flex-wrap">
+        <div className="flex flex-row justify-center items-center ml-[-4rem] py-8 w-full">
             {
-                techStackModel.map((key, index) => {
-                    return <TechItem key={index}>{key}</TechItem>
+                Object.keys(TechStackModel).map((key, index) => {
+                    return <TechItem key={index} title={key} models={TechStackModel[key as keyof typeof TechStackModel]} />
                 })
             }
         </div>
