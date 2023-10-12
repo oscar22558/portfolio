@@ -1,8 +1,6 @@
-import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
 import { Text } from '../(components)/(text)/Text'
 import { TechStack } from './TechStack'
 import { CheckedItem } from './CheckedItem'
-import { CodeItem } from './CodeItem'
 
 export function About() {
 
@@ -10,41 +8,36 @@ export function About() {
         <div id="about" className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9] py-32">
             <div className="text-5xl font-medium"><span>About Me</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8"></div>
-            <div className="font-semibold mb-2 flex text-lg"><span>Who am I</span></div>
-            <div className="px-8 mb-2">
+            <div className="px-8 mb-8">
                 <Text className="text-center text-lg">As a <span className="text-[#0EA5E9] font-semibold text-lg">full-stack developer</span> with 1.5 years of hands-on experience, 
                 I bring a wealth of expertise to the table. My skills span across a range of technologies, including React, Spring Boot, 
                 the Laravel PHP framework, and SQL development. I specialize in crafting high-quality user interfaces and building scalable, 
                 high-performance backend services for diverse product offerings. My commitment to delivering top-notch solutions is unwavering.
                 </Text>
             </div>
-            <div className="w-full px-8">
-                <div className="rounded-xl border-[#0EA5E9] border-2 p-4 flex flex-col items-center">
-                    <div>
-                        <CheckedItem size="base">Frontend Development</CheckedItem>
-                        <CheckedItem size="base">Backend Development</CheckedItem>
-                        <CheckedItem size="base">Database Deisng</CheckedItem>
-                        <CheckedItem size="base">Cloud Solutions</CheckedItem>
-                    </div>
-                </div> 
-            </div>
-            <div className="font-semibold mt-8 mb-2"><span>Tech I use</span></div>
-            <div className="px-8">
-                <TechStack />
-            </div>
+            <div className="font-semibold flex text-lg mb-2"><span>What I offer</span></div>
+            <div className="flex flex-col items-center mb-4">
+                <div>
+                    <CheckedItem size="base">Frontend Development</CheckedItem>
+                    <CheckedItem size="base">Backend Development</CheckedItem>
+                    <CheckedItem size="base">Database Deisng</CheckedItem>
+                    <CheckedItem size="base">Cloud Solutions</CheckedItem>
+                </div>
+            </div> 
+            <TechStack />
         </div>
-        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-48 px-32">
+        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-48">
             <div className="text-6xl font-medium"><span>About Me</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-16"></div>
             <div className="h-full w-full flex flex-col justify-start items-center">
-                <div className="mb-8">
+                <div className="mb-8 px-16">
                     <Text className="text-xl max-w-[1000px]">As a <span className="text-[#0EA5E9] font-semibold text-xl">full-stack developer</span> with 1.5 years of hands-on experience, 
                     I bring a wealth of expertise to the table. My skills span across a range of technologies, including React, Spring Boot, 
                     the Laravel PHP framework, and SQL development. I specialize in crafting high-quality user interfaces and building scalable, 
                     high-performance backend services for diverse product offerings. My commitment to delivering top-notch solutions is unwavering.
                     </Text>
                 </div> 
-                <div className="text-xl font-semibold mb-4"><span>What I can do</span></div>
+                <div className="text-xl font-semibold mb-4"><span>What I offer</span></div>
                 <div className="p-4 mb-8 flex flex-row justify-center w-[1000px]">
                         <div className="flex flex-col">
                             <CheckedItem size="xl">Frontend Development</CheckedItem>

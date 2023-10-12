@@ -4,6 +4,7 @@ import { TouchEventHandler, useEffect, useRef, useState } from "react"
 import { Pagination } from "./Pagination"
 import TechStack from "./TechStackModel"
 import { TechItem } from "./TechItem"
+import TechStackModel from "./TechStackModel"
 
 export function TechStackMobile(){
     const techStack = TechStack
@@ -62,6 +63,7 @@ export function TechStackMobile(){
           const divEle = containerRef.current as HTMLDivElement | null
           if(!divEle) return
           const pageDivs = document.querySelectorAll("#page")
+          divEle.style.marginLeft = "0px"
           pageDivs.forEach(pageDiv => {
             const ele = pageDiv as HTMLDivElement
             ele.style.width = `${window.innerWidth}px`
@@ -78,22 +80,12 @@ export function TechStackMobile(){
       }, [setWidth])
     
     return (<>
-        <div className="font-semibold mt-8 mb-2"><span>Tech I use</span></div>
         <div className="w-full overflow-hidden mb-2">
             <div className="inline-flex flex-row duration-700"  ref={containerRef} onClick={onClick} onTouchStart={onTouchStart} onTouchMove={onTouchMove}>
             {
                 Object.keys(techStack).map((key, index) => {
-                    return (<div key={index} id="page" className="inline-block">
-                        <div className="flex justify-center underline items-center w-full mb-1">
-                            <span className="">{key}</span>
-                        </div>
-                        <div className="flex justify-start items-center ml-[-0.5rem] mt-[-0.5rem] flex-wrap px-8">
-                            {
-                                // techStack[key as keyof typeof techStack].map((item, index) => {
-                                //     return <TechItem key={index}>{item}</TechItem>
-                                // })
-                            }
-                        </div>
+                    return (<div key={index} id="page" className="inline-block px-[64px] py-[40px]">
+                            <TechItem key={index} title={key} models={techStack[key as keyof typeof TechStackModel]} />
                     </div>
                     )
                 })
