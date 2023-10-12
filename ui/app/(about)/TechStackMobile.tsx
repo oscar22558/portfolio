@@ -84,7 +84,7 @@ export function TechStackMobile(){
             <div className="inline-flex flex-row duration-700"  ref={containerRef} onClick={onClick} onTouchStart={onTouchStart} onTouchMove={onTouchMove}>
             {
                 Object.keys(techStack).map((key, index) => {
-                    return (<div key={index} id="page" className="inline-block px-[64px] py-[40px]">
+                    return (<div key={index} id="page" className="inline-block px-8 py-[40px]">
                             <TechItem key={index} title={key} models={techStack[key as keyof typeof TechStackModel]} />
                     </div>
                     )
