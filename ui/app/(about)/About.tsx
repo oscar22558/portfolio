@@ -31,7 +31,7 @@ export function About() {
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-16"></div>
             <div className="h-full w-full flex flex-col justify-start items-center">
                 <div className="mb-8 px-16">
-                    <Text className="text-xl max-w-[1000px]">As a <span className="text-[#0EA5E9] font-semibold text-xl">full-stack developer</span> with 1.5 years of hands-on experience, 
+                    <Text className="text-xl max-w-[1100px]">As a <span className="text-[#0EA5E9] font-semibold text-xl">full-stack developer</span> with 1.5 years of hands-on experience, 
                     I bring a wealth of expertise to the table. My skills span across a range of technologies, including React, Spring Boot, 
                     the Laravel PHP framework, and SQL development. I specialize in crafting high-quality user interfaces and building scalable, 
                     high-performance backend services for diverse product offerings. My commitment to delivering top-notch solutions is unwavering.
