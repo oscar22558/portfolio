@@ -1,64 +1,26 @@
-import { SectionContentContainer } from '../(components)/(section-content-container)/SectionContainer'
-import { SectionTitle } from '../(components)/(section-title)/SectionTitle'
-import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
-import AppClassName from '../AppClassName'
-import { ExternalLinks } from '../ExternalLinks'
+import { ProjectModels } from './ProjectModels'
 import { ProjectCard } from './(project-card)/ProjectCard'
-import { TechTagContainer } from './TechTagContainer'
-import style from './style.module.css'
 
 export function Projects() {
-    const {sectionHeaderContainer} = AppClassName
-    const { robocoachHkuit, smartreahbSail, smartrehabPortalHome} = ExternalLinks
-    const models = [
-        {
-            img: "/robocoach-cover.jpg",
-            title: "Robocoach (Backend)",
-            href: robocoachHkuit,
-            techTags: [
-                "PHP", "Laravel", "PostgreSQL", "Docker", "AWS"
-            ]
-        },
-        {
-            img: "/smartrehab-cover-960.png",
-            title: "SmartRehab (Mobile app)",
-            href: smartreahbSail,
-            techTags: ["TypeScript", "React Native", "Redux"]
-        },
-        {
-            img: "/smartrehab-portal-cover.png",
-            title: "SmartRehab Therapist Portal (Web frontend)",
-            href: smartrehabPortalHome,
-            techTags: ["JavaScript", "React", "Redux", "HTML/CSS", "TailWind"]
-        }
-    ]
 
-    return (
-        <div id="projects" className="section-container bg-gray-100 flex flex-col justify-start reveal">
-            <SectionContentContainer>
-                <SectionTopSpacer />
-                <div>
-                    <div className={`${sectionHeaderContainer} lg:items-start`}>
-                        <SectionTitle>Projects</SectionTitle>
-                        <div className="text-sky-500">Some backend and frontend projects I worked on</div>
+    return (<>
+        <div id="projects" className="bg-black pt-32 pb-16 md:py-32">
+            <div className="flex flex-col items-center">
+                <div className="text-5xl font-medium text-white md:text-6xl "><span>Projects</span></div>
+                <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8 md:mt-8 md:mb-10"></div>
+                <div className="text-gray-500 text-xl mb-14 px-8 text-center md:px-0 md:mb-16">Some <span className="text-[#0EA5E9]">backend</span> and <span className="text-[#0EA5E9]">frontend</span> projects I worked on</div>
+            </div>
+            <div className="px-8 mt-[-4rem] md:px-32 md:mt-[-6rem]">
+            {
+                ProjectModels.map((model, index) => {
+                    return <div className="mt-16 md:mt-24">
+                        <ProjectCard key={index} model={model}/>
                     </div>
-                    <div className={`flex flex-row justify-center lg:justify-start flex-wrap ${style["cards-container"]}`}>
-                        {
-                            models.map(({ href, img, techTags, title }, index) => (
-                                <div key={index} className="pl-12 pt-8">
-                                    <ProjectCard img={img} title={title} href={href} techTags={(
-                                        techTags.map((title, index) => (
-                                            <TechTagContainer key={index} title={title} />
-                                        ))
-                                    )} />
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-                <SectionTopSpacer />
-            </SectionContentContainer>
-
+                })
+            }
+            </div>
         </div>
+
+    </>
     )
 }
