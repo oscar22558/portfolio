@@ -24,7 +24,7 @@ export function ProjectCard({model}: Props){
                 </div>
             </div>
             <div className="
-                text-white ml-0 mt-8 flex-1 flex flex-col justify-center w-[300px] 
+                text-white ml-0 mt-8 flex-1 flex flex-col justify-center
                 md:mt-0 md:ml-32
                 ">
                 <div className="text-gray-500 font-semibold mb-0 md:mb-2"><span>{category}</span></div>
