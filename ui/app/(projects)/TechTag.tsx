@@ -1,8 +1,14 @@
 export interface Props{
     title: string
 }
+
 export function TechTag({title}: Props){
     return (
-        <span className="border border-transparent rounded-2xl bg-sky-500 text-white px-2 py-1 text-center align-text-center text-sm">{title}</span>
+        <div className="
+            inline-block border border-transparent rounded-full bg-[#ffffff1a] text-white 
+            px-4 py-1.5 text-center align-text-center
+            ">
+            <span>{title}</span>
+        </div>
     )
 }

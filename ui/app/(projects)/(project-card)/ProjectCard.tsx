@@ -1,39 +1,45 @@
 "use client"
-import { ReactNode } from 'react'
-import style from './style.module.css'
-import Image from 'next/image'
+import { ProjectModelType } from '../ProjectModels'
+import { TechTag } from '../TechTag'
+import { Link } from '../Link'
 
 interface Props{
-    href?: string
-    title?: string
-    img?: string
-    size?: number
-    techTags?: ReactNode | ReactNode[]
+    model: ProjectModelType
 }
-export function ProjectCard({href, title, img = "", size = 400, techTags}: Props){
-    const containerStyle = {width: size, height: size}
-    const imgStyle= {width: size, height: size}
+export function ProjectCard({model}: Props){
 
-    const onClick = (href?: string) => () =>{
-        if(href){
-            window?.open(href, '_blank')?.focus();
-        }
-    }
+    const {href, img, techTags, title, description, category} = model
 
     return (
-        <div 
-            className={`relative bg-white shadow hover:shadow-md hover:scale-110 border border-transperant rounded-md overflow-hidden ${style["card-container"]} cursor-pointer transition duration-500`} 
-            style={containerStyle}
-            onClick={onClick(href)}
-        >
-            <div className="h-full w-full flex justify-center items-center">
-                <Image alt="" src={img} {...imgStyle} style={{...imgStyle, objectFit: "cover"}}/>
-            </div>
-            <div className={`absolute inset-x-0 ${style["caption-container"]} p-4`}>
-                <div className='text-white text-base font-semibold'>{title}</div>
-                <div className="flex flex-row flex-wrap">
-                    {techTags}
+        <div className="flex flex-col items-center md:flex-row md:px-0">
+            <div className="flex flex-col justify-center">
+                <div className='
+                    md:w-[400px] md:h-[400px] bg-gray-900 flex flex-col justify-center overflow-hidden
+                    w-[300px] h-[300px]
+                    '>
+                    <img src={img} alt='' className="
+                        md:w-[400px] md:h-[400px] object-cover hover:scale-105 duration-500
+                        w-[300px] h-[300px] 
+                        "/>
                 </div>
+            </div>
+            <div className="
+                text-white ml-0 mt-8 flex-1 flex flex-col justify-center w-[300px] 
+                md:mt-0 md:ml-32
+                ">
+                <div className="text-gray-500 font-semibold mb-0 md:mb-2"><span>{category}</span></div>
+                <div className="text-4xl mb-4 text-[#0EA5E9]"><span>{title}</span></div>
+                <div className="mb-4 ml-[-1rem] mt-[-0.5rem] overflow-scroll md:overflow-auto flex flex-row justify-start items-start md:mt-0">
+                    {
+                        techTags.map((tag, index) => {
+                            return <div key={index} className="inline-block ml-4 flex-none mt-2 md:mt-0">
+                                <TechTag title={tag}/>
+                            </div>
+                        })
+                    }
+                </div>
+                <div className="text-gray-500 text-xl mb-4"><span>{description}</span></div>
+                <Link href={href}>View Project</Link>
             </div>
         </div>
     )
