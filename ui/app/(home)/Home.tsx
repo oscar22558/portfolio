@@ -1,6 +1,8 @@
-import Button from '../(components)/(button)/Button'
+import Button from './(link-button)/Button'
 import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
 import style from './style.module.css'
+import { ResumeButton } from './(link-button)/ResumeButton'
+import { AboutMeButton } from './(link-button)/AboutMeButton'
 
 export function Home(){
     return <div id="home" className="section-container h-screen w-full">
@@ -18,8 +20,8 @@ export function Home(){
                 </div>
             </div>
             <div className='mt-28 z-10'>
-                <Button mode="contained" className="w-[250px]">Resume</Button>
-                <Button mode="outlined" className="ml-4 w-[250px]">About me ↓</Button>
+                <ResumeButton className="w-[250px]" />
+                <AboutMeButton className="ml-4 w-[250px]" />
             </div>
         </div>
     </div>
@@ -35,8 +37,8 @@ export function Home(){
                 <span>Full stack developer</span>
             </div>
             <div className='mt-14 flex flex-col'>
-                <Button mode="contained" className="w-[200px]">Resume</Button>
-                <Button mode="outlined" className="mt-4 w-[200px]">About me ↓</Button>
+                <ResumeButton className="w-[200px]" />
+                <AboutMeButton className="mt-4 w-[200px]" />
             </div>
         </div>
     </div>

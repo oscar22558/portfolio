@@ -1,5 +1,4 @@
 import { MouseEventHandler, ReactNode } from "react"
-import Text from "../(text)/Text"
 
 interface Props{
     onClick?: MouseEventHandler<HTMLSpanElement>
