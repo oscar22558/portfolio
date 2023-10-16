@@ -4,7 +4,7 @@ import { ProjectCard } from './(project-card)/ProjectCard'
 export function Projects() {
 
     return (<>
-        <div id="projects" className="bg-black pt-32 pb-16 md:py-32">
+        <div id="projects" className="section-container bg-black pt-32 pb-16 md:py-32">
             <div className="flex flex-col items-center">
                 <div className="text-5xl font-medium text-white md:text-6xl "><span>Projects</span></div>
                 <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8 md:mt-8 md:mb-10"></div>

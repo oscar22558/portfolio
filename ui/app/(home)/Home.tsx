@@ -3,7 +3,7 @@ import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTo
 import style from './style.module.css'
 
 export function Home(){
-    return <div id="home" className="h-screen w-full">
+    return <div id="home" className="section-container h-screen w-full">
     <div className="hidden lg:flex flex flex-col justify-start items-start h-screen w-full relative px-44">
         <SectionTopSpacer />
         <img src="/home-bg.jpg" className="absolute inset-0 w-screen h-screen object-cover z-0"/>

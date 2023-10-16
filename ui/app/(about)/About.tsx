@@ -4,7 +4,7 @@ import { CheckedItem } from './CheckedItem'
 
 export function About() {
 
-    return (<div id="about" className="w-full">
+    return (<div id="about" className="section-container w-full">
         <div className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9] py-32">
             <div className="text-5xl font-medium"><span>About</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8"></div>
