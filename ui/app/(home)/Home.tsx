@@ -3,8 +3,8 @@ import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTo
 import style from './style.module.css'
 
 export function Home(){
-    return <>
-    <div id='home' className={`hidden lg:flex flex flex-col justify-start items-start h-screen w-full relative px-44`}>
+    return <div id="home" className="h-screen w-full">
+    <div className="hidden lg:flex flex flex-col justify-start items-start h-screen w-full relative px-44">
         <SectionTopSpacer />
         <img src="/home-bg.jpg" className="absolute inset-0 w-screen h-screen object-cover z-0"/>
         <div className={`${style["bg-layer"]} absolute inset-0 z-0`}></div>
@@ -23,7 +23,7 @@ export function Home(){
             </div>
         </div>
     </div>
-    <div id='home' className={`flex lg:hidden flex flex-col justify-center items-center h-screen w-full relative`}>
+    <div className="flex lg:hidden flex flex-col justify-center items-center h-screen w-full relative">
         <SectionTopSpacer />
         <img src="/home-bg.jpg" className="absolute inset-0 w-screen h-screen object-cover"/>
         <div className={`${style["bg-layer"]} absolute inset-0 z-0`}></div>
@@ -40,5 +40,5 @@ export function Home(){
             </div>
         </div>
     </div>
-    </>
+    </div>
 }
