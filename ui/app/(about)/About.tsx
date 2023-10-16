@@ -4,9 +4,9 @@ import { CheckedItem } from './CheckedItem'
 
 export function About() {
 
-    return (<>
-        <div id="about" className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9] py-32">
-            <div className="text-5xl font-medium"><span>About Me</span></div>
+    return (<div id="about" className="w-full">
+        <div className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9] py-32">
+            <div className="text-5xl font-medium"><span>About</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8"></div>
             <div className="px-8 mb-8">
                 <Text className="text-center text-xl">As a <span className="text-[#0EA5E9] font-semibold text-lg">full-stack developer</span> with 1.5 years of hands-on experience, 
@@ -26,8 +26,8 @@ export function About() {
             </div> 
             <TechStack />
         </div>
-        <div id="about" className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-48">
-            <div className="text-6xl font-medium"><span>About Me</span></div>
+        <div className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-48">
+            <div className="text-6xl font-medium"><span>About</span></div>
             <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-16"></div>
             <div className="h-full w-full flex flex-col justify-start items-center">
                 <div className="mb-8 px-16">
@@ -51,6 +51,6 @@ export function About() {
                 <TechStack />
             </div>
         </div>
-    </>
+    </div>
     )
 }
