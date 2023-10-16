@@ -27,7 +27,7 @@ export function Home(){
         <SectionTopSpacer />
         <img src="/home-bg.jpg" className="absolute inset-0 w-screen h-screen object-cover"/>
         <div className={`${style["bg-layer"]} absolute inset-0 z-0`}></div>
-        <div className='z-[100] flex flex-col justify-center items-center grow'>
+        <div className='z-[10] flex flex-col justify-center items-center grow'>
             <div className={`flex justify-center tracking-tight transition duration-300 text-white text-5xl sm:text-7xl font-normal`}>
                 <span >Oscar Shum</span>
             </div>
