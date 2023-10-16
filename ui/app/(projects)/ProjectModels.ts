@@ -17,7 +17,7 @@ export const ProjectModels = [
         img: "/smartrehab-cover-960.png",
         title: "SmartRehab",
         href: smartreahbSail,
-        techTags: ["TypeScript", "React Native Native", "Redux"],
+        techTags: ["TypeScript", "React Native", "Redux"],
         description: "A mobile app assists stroke patients to carry out therapy."
 
     }
