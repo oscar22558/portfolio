@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import AppClassName from "@/app/AppClassName";
 
 interface Props{
     children?: ReactNode
@@ -7,7 +6,7 @@ interface Props{
     color?: string
 }
 
-export function Text({children, className, color = AppClassName.contentTextColor}: Props){
+export function Text({children, className, color = "text-gray-500"}: Props){
     return <span className={`${color} inline-block max-w-[600px] ${className}`}>{children}</span>
 }
 
