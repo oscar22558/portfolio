@@ -1,0 +1,36 @@
+import { CodeItem } from "./CodeItem"
+import { TechStackIcon } from "./TechStackModel"
+
+interface Props{
+    models: string[]
+    title: string
+}
+
+export function TechItem({title, models}: Props){
+    return (
+        <div className="relative w-full h-[400px]">
+            <div className="absolute inset-x-0 top-[-40px]  flex flex-row justify-center">
+                <div className="inline-block">
+                    <div className="bg-[#0ea5e9] rounded-full w-[80px] h-[80px] relative">
+                        <img 
+                            src={TechStackIcon[title as keyof typeof TechStackIcon]}
+                            style={{width: "44px", height: "44px"}} 
+                            className="absolute top-[40px] left-[40px] ml-[-22px] mt-[-22px]"
+                            />
+                    
+                    </div>
+                </div>
+            </div>
+            <div className="bg-white h-full shadow py-16 flex flex-col justify-start items-center">
+                <div className="text-xl mb-3"><span>{title}</span></div>
+                <div className="">
+                    {
+                        models.map((model, index) => {
+                            return <CodeItem key={index} size="xl">{model}</CodeItem>
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+    )
+}

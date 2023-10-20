@@ -1,42 +1,56 @@
-import { Card } from '../(components)/(card)/Card'
-import { SectionTitle } from '../(components)/(section-title)/SectionTitle'
-import { SectionTopSpacer } from '../(components)/(section-top-spacer)/SectionTopSpacer'
-import ModelList from './CardModelList'
-import style from './style.module.css'
 import { Text } from '../(components)/(text)/Text'
-import AppClassName from '../AppClassName'
-import { SectionHeaderDivider } from '../(components)/(section-header-divider)/SectionHeaderDivider'
-import Image from 'next/image'
+import { TechStack } from './TechStack'
+import { CheckedItem } from './CheckedItem'
 
 export function About() {
-    const {sectionContainerXPadding, headerContentYPadding, sectionHeaderContainer} = AppClassName
-    return (
-        <div id="about" className={`section-container ${style.container} ${sectionContainerXPadding} reveal`}>
-            <SectionTopSpacer />
-            <div className="flex flex-col-reverse lg:flex-row">
 
-                <div className={`flex flex-col basis-1/2 items-center lg:items-end justify-start ${style["wid-container"]}`}>
-                    {ModelList.map(({ img, ...model }, index) => (
-                        <div key={index} className="mt-8">
-                            <Card image={<Image src={img} width={48} height={48} alt="" />} {...model} />
-                        </div>
-                    ))}
-                </div>
-                <SectionHeaderDivider />
-                <div className={sectionHeaderContainer}>
-                    <SectionTitle>About me</SectionTitle>
-                    <div>
-                        <Text color={AppClassName.subtitleTextColor}>Who am I</Text>
-                    </div>
-                    <div className={headerContentYPadding}>
-                        <Text className="text-center">I am a full-stack developer with 1.5 years of experience in building web apps and backend services.
-                        With my skills, experiences and passion in software development, I am very confident in building high quality software system which suits my client&apos;s needs.
-                        I&apos;m open to any job opportunities. Please feel free to contact me if you have job opportunities for me.
-                        </Text>
-                    </div>
-                </div>
+    return (<div id="about" className="section-container w-full">
+        <div className="flex md:hidden flex-col justify-center items-center w-full h-full bg-[#F9F9F9] py-32">
+            <div className="text-5xl font-medium"><span>About</span></div>
+            <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-8"></div>
+            <div className="px-8 mb-8">
+                <Text className="text-center text-xl">As a <span className="text-[#0EA5E9] font-semibold text-lg">full-stack developer</span> with 1.5 years of hands-on experience, 
+                I bring a wealth of expertise to the table. My skills span across a range of technologies, including React, Spring Boot, 
+                the Laravel PHP framework, and SQL development. I specialize in crafting high-quality user interfaces and building scalable, 
+                high-performance backend services for diverse product offerings. My commitment to delivering top-notch solutions is unwavering.
+                </Text>
             </div>
-            <SectionTopSpacer />
+            <div className="font-semibold flex text-xl mb-2"><span>What I offer</span></div>
+            <div className="flex flex-col items-center mb-4">
+                <div>
+                    <CheckedItem size="xl">Frontend Development</CheckedItem>
+                    <CheckedItem size="xl">Backend Development</CheckedItem>
+                    <CheckedItem size="xl">Database Deisng</CheckedItem>
+                    <CheckedItem size="xl">Cloud Solutions</CheckedItem>
+                </div>
+            </div> 
+            <TechStack />
         </div>
+        <div className="hidden md:flex flex-col justify-center items-center w-full bg-[#F9F9F9] py-48">
+            <div className="text-6xl font-medium"><span>About</span></div>
+            <div className="bg-[#0EA5E9] h-[4px] w-[66px] mt-4 mb-16"></div>
+            <div className="h-full w-full flex flex-col justify-start items-center">
+                <div className="mb-8 px-16">
+                    <Text className="text-xl max-w-[1100px]">As a <span className="text-[#0EA5E9] font-semibold text-xl">full-stack developer</span> with 1.5 years of hands-on experience, 
+                    I bring a wealth of expertise to the table. My skills span across a range of technologies, including React, Spring Boot, 
+                    the Laravel PHP framework, and SQL development. I specialize in crafting high-quality user interfaces and building scalable, 
+                    high-performance backend services for diverse product offerings. My commitment to delivering top-notch solutions is unwavering.
+                    </Text>
+                </div> 
+                <div className="text-xl font-semibold mb-4"><span>What I offer</span></div>
+                <div className="p-4 mb-8 flex flex-row justify-center w-[1000px]">
+                        <div className="flex flex-col">
+                            <CheckedItem size="xl">Frontend Development</CheckedItem>
+                            <CheckedItem size="xl">Backend Development</CheckedItem>
+                        </div>
+                        <div className="flex flex-col ml-16">
+                            <CheckedItem size="xl">Database Design</CheckedItem>
+                            <CheckedItem size="xl">Cloud Solutions</CheckedItem>
+                        </div>
+                    </div>
+                <TechStack />
+            </div>
+        </div>
+    </div>
     )
 }

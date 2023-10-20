@@ -22,7 +22,7 @@ export function Footer(){
         {href: "https://www.linkedin.com/in/oscar-shum-571733253/", img: "/linkedin-icon.svg"},
 
     ]
-    return <div className="py-4 px-8 bg-sky-500 flex flex-col justify-center items-center">
+    return <div className="py-4 px-8 bg-black flex flex-col justify-center items-center">
 
  
         <div className="py-2 flex flex-row justify-center items-center">

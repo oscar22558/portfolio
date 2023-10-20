@@ -1,8 +1,0 @@
-.container{
-    min-height: 300px;
-}
-
-.container:hover .icon{
-   transform: scale(1.20);
-   /* background-color: rgb(125 211 252); */
-}
