@@ -8,7 +8,7 @@ export function TechStack(){
             <div className="flex flex-row justify-center items-center ml-[-4rem]">
             {
                 Object.keys(TechStackModel).map((key, index) => {
-                    return <div className="flex-1 ml-16">
+                    return <div key={index} className="flex-1 ml-16">
                         <TechItem key={index} title={key} models={TechStackModel[key as keyof typeof TechStackModel]} />
                         </div>                
                 })

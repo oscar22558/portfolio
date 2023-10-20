@@ -25,7 +25,7 @@ export function TimelineItem({model}: Props){
                 <div className="items-center text-gray-500 text-xl pt-[24px] pb-[16px]">
                 {
                     descriptions.map((description, index) => (
-                        <div><span key={index}>{description}</span></div>
+                        <div key={index}><span>{description}</span></div>
                     ))
                 }
                 </div>

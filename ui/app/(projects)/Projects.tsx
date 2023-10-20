@@ -15,7 +15,7 @@ export function Projects() {
 
             {
                 ProjectModels.map((model, index) => {
-                    return <div className="mt-16 md:mt-24 w-full flex flex-row justify-start">
+                    return <div key={index} className="mt-16 md:mt-24 w-full flex flex-row justify-start">
                         <ProjectCard key={index} model={model}/>
                     </div>
                 })
