@@ -15,6 +15,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" >
+            <head>
+            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+            </head>
             <body className={`${raleway.className}`}>
                 {children}
                 <div id="top-of-site-pixel-anchor"></div>

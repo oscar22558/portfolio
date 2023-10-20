@@ -18,7 +18,7 @@ export const ProjectModels = [
         title: "SmartRehab",
         href: smartreahbSail,
         techTags: ["TypeScript", "React Native", "Redux"],
-        description: "A mobile app assists stroke patients to carry out therapy."
+        description: "A mobile app integrated with AI technology assists stroke patients in carrying out therapy."
 
     }
 ] 
