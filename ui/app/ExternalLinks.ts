@@ -3,4 +3,5 @@ export const ExternalLinks = {
     robocoachHkuit: "https://www.hkuit.com/robocoach",
     smartreahbSail: "https://www.sail.hku.hk/ai-rehab-exercise",
     smartrehabPortalHome: "http://147.8.181.76:4200",
+    portfolio: "https://oscarshum.com"
 }

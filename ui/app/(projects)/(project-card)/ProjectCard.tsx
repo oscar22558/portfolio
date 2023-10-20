@@ -8,7 +8,7 @@ interface Props{
 }
 export function ProjectCard({model}: Props){
 
-    const {href, img, techTags, title, description, category} = model
+    const {href, img, techTags, title, description, category, githubLink} = model
 
     return (
         <div className="flex flex-col items-center md:flex-row md:px-0">
@@ -41,7 +41,11 @@ export function ProjectCard({model}: Props){
                     }
                 </div>
                 <div className="text-gray-500 text-xl mb-4"><span>{description}</span></div>
-                <Link href={href}>View Project</Link>
+                <div>
+
+                    <Link href={href}>View Project</Link>
+                    { githubLink && <span className="ml-4"> <Link href={""}>Github</Link></span>} 
+                </div>
             </div>
         </div>
     )
