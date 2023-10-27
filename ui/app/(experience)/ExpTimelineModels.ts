@@ -1,8 +1,8 @@
 export const ExpTimelineModels = [
     {
-        title: "Research Assistant II (Software Engineer)",
+        title: "Full Stack Software Engineer",
         period: "2021 - 2023",
-        organization: "The University of Hong Kong",
+        organization: "Hong Kong Univisual Intelligent Technology",
         descriptions: [
             "Developed a scalable and maintainable REST api services for an student exercise management solution.",
             "Developed a senior-friendly and easy-to-use mobile app for stroke patients."
