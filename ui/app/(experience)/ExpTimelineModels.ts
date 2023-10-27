@@ -2,7 +2,7 @@ export const ExpTimelineModels = [
     {
         title: "Full Stack Software Engineer",
         period: "2021 - 2023",
-        organization: "Hong Kong Univisual Intelligent Technology",
+        organization: "Hong Kong Univisual Intelligent Technology Ltd.",
         descriptions: [
             "Developed a scalable and maintainable REST api services for an student exercise management solution.",
             "Developed a senior-friendly and easy-to-use mobile app for stroke patients."
