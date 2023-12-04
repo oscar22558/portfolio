@@ -3,13 +3,13 @@ import { ExternalLinks } from '../ExternalLinks'
 const  { robocoachHkuit, smartreahbSail, portfolio} = ExternalLinks
 export const ProjectModels = [
     {
-        category: "Backend",
+        category: "Full stack",
         img: "/robocoach-cover.jpg",
         title: "Robocoach",
         href: robocoachHkuit,
         githubLink: "",
         techTags: [
-            "PHP", "Laravel", "PostgreSQL", "Docker", "AWS"
+            "PHP", "JavaScript", "React", "Laravel", "PostgreSQL", "Docker", "AWS"
         ],
         description: "An AI solution enables schools to monitor student’s exercise performance and progress."
     },
